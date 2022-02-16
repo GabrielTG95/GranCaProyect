@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.menu_noticias{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.años{
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+
+.meses{
+    margin-left: 20%;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+}
+.meses p{
+    font-size: 24px;
+}
+
+.buscar{
+    width: 20%;
+    float: right;
+    background-color: blue;
+}
