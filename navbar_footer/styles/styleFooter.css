@@ -1,0 +1,70 @@
+
+.fondo_footer{
+background-image: url("/assets/footer_fondo2.png");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.footer{
+    background-repeat: no-repeat;
+    background-color: rgba(80, 80, 248, 0.459);
+    padding: 0% 20%;
+}
+
+.foto_footer {
+    width: 150px;
+}
+
+.div_footer {
+    width: 20%;
+}
+
+.div2_footer{
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 20%;
+    border-radius: 20px;
+    padding: 1% 1%;
+}
+.div2_footer div{
+    height: 5px;
+    width: 100%;
+    background-color: #FFB718;
+    
+}
+
+
+
+
+
+
+.footer2 {
+    text-align: center;
+    padding: 0% 20%;
+}
+
+@media (max-width:1500px) {
+    .footer {
+        padding: 0% 10%;
+    }
+}
+
+@media (max-width:1200px) {
+    .footer {
+        padding: 0% 5%;
+    }
+    .foto_footer {
+        width: 100px;
+    }
+    .footer2 {
+        padding: 0% 10%;
+    }
+}
+
+@media (max-width:900px) {
+    .footer {
+        padding: 0% 0%;
+    }
+    .footer2 {
+        padding: 0% 1%;
+    }
+}
