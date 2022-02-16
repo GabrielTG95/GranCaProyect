@@ -22,17 +22,20 @@
         if ($(window).scrollTop() > 50) {
             $(".navbar").css({
                 'height': "3.5rem",
+                'margin-top': "1rem"
             });
             $("#logoGranca").css({
                 'width': '4rem'
             });
             $("#logoGranca").css({
                 'display': 'none'
-            })
+            });
+
         }
         if ($(window).scrollTop() < 50) {
             $(".navbar").css({
                 'height': "6rem",
+                'margin-top': "0"
             });
             $("#logoGranca").css({
                 'display': 'inline-block'
