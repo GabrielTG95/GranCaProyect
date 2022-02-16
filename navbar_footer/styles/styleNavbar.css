@@ -8,8 +8,8 @@ body {
     width: 100%;
 }
 
-section {
-    padding-top: 7rem;
+header {
+    padding-top: 6rem;
 }
 
 .navbar-nav>li>a {
@@ -123,4 +123,8 @@ section {
     height: 10vh;
     width: 10vw;
     background-color: black;
+}
+
+.cabecera {
+    height: 50vh;
 }
