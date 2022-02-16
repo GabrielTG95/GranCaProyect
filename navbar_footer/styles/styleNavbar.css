@@ -27,7 +27,7 @@ body {
     position: absolute;
     height: 100%;
     background-color: #FFB718;
-    clip-path: polygon(80% 0, 100% 0, 100% 50%, 100% 100%, 73% 100%);
+    clip-path: polygon(70% 0, 100% 0, 100% 50%, 100% 100%, 60% 100%);
     transition: 1s all;
 }
 
@@ -39,7 +39,7 @@ body {
 }
 
 .navbar-red:hover .wrapper {
-    clip-path: polygon(81% 0, 100% 0, 100% 50%, 100% 100%, 70% 100%)
+    clip-path: polygon(70% 0, 100% 0, 100% 50%, 100% 100%, 50% 100%);
 }
 
 .navbar-brand:hover {
@@ -57,10 +57,9 @@ body {
 
 @media (min-width: 992px) {
     .specialItem {
-        background-color: #FFB718;
+        background-color: #001896;
         border-radius: 0.3rem;
         margin: 0 1rem 0 1rem;
-        color: black !important;
         font-weight: bold;
     }
 }
