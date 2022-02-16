@@ -1,21 +1,20 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-.fondo_footer{
-background-image: url("/assets/footer_fondo2.png");
-background-repeat: no-repeat;
-background-size: cover;
+.fondo_footer {
+    background-image: url("../../assets/footer_fondo2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.footer{
+.footer {
     background-repeat: no-repeat;
     background-color: rgba(80, 80, 248, 0.459);
     padding: 2% 20% 0% 20%;
 }
-
 
 
 /*
@@ -30,28 +29,32 @@ background-size: cover;
     width: 50%;
     display: flex;
 }
-.div_izquierda  .foto_footer {
+
+.div_izquierda .foto_footer {
     width: 20%;
     margin-right: 10%;
 }
+
 .menu_footer {
     width: 70%;
 }
-.linea_temporal{
+
+.linea_temporal {
     float: left;
     width: 12px;
     height: 200px;
     background-color: blue;
     border-radius: 10px;
 }
-.comp_linea_temporal{
+
+.comp_linea_temporal {
     font-size: 22px;
     margin-bottom: 35px;
     color: #FFB718;
     font-weight: bold;
 }
 
-.guion{
+.guion {
     margin-left: -5px;
     margin-top: 12px;
     float: left;
@@ -70,15 +73,17 @@ background-size: cover;
 ------------------------------------------------------
 */
 
-.div_derecha{
+.div_derecha {
     width: 50%;
     display: flex;
 }
+
 .div_derecha .foto_footer {
     width: 35%;
     margin-right: 5%;
 }
-.siguenos{
+
+.siguenos {
     color: blue;
     background-color: rgba(255, 255, 255, 0.7);
     width: 60%;
@@ -86,28 +91,29 @@ background-size: cover;
     padding: 10px 15px;
     height: 200px;
 }
-.sim_hr{
+
+.sim_hr {
     height: 5px;
     width: 100%;
     background-color: #FFB718;
 }
-.iconos{
+
+.iconos {
     margin: 20px 10px;
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 10px;
 }
-.iconos img{
+
+.iconos img {
     width: 50px;
 }
-
-
-
 
 .footer2 {
     text-align: center;
     padding: 0% 20%;
 }
+
 
 /*
 ------------------------------------------------------
@@ -125,7 +131,7 @@ background-size: cover;
 
 @media (max-width:1200px) {
     .iconos {
-        grid-template-columns: auto auto auto ;
+        grid-template-columns: auto auto auto;
     }
     .footer {
         padding: 2% 5%;
@@ -149,8 +155,6 @@ background-size: cover;
     .footer2 {
         padding: 0% 1%;
     }
-
-
     .div_izquierda {
         width: 70%;
         display: flex;
@@ -165,7 +169,6 @@ background-size: cover;
     .linea_temporal {
         height: 230px;
     }
-
     .div_derecha {
         margin-left: -5%;
         width: 30%;
@@ -185,5 +188,4 @@ background-size: cover;
         padding: 10px 2px;
         height: 150px;
     }
-
 }
