@@ -77,6 +77,16 @@ body {
     font-weight: bold;
 }
 
+.dropdown-item {
+    font-weight: bold;
+    margin: .1rem 0;
+}
+
+.dropdown-item:hover {
+    background-color: #001896;
+    color: white;
+}
+
 @media (max-width: 1603px) {
     .specialItem {
         border-radius: 0.3rem;
