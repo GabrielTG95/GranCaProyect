@@ -55,6 +55,14 @@ body {
     z-index: 10
 }
 
+.logo {
+    float: left;
+}
+
+#logoGranca {
+    margin: .3rem;
+}
+
 @media (min-width: 1280px) {
     .specialItem {
         background-color: #001896;
@@ -78,7 +86,7 @@ body {
 }
 
 @media (max-width: 1198px) {
-    .logo {
+    .specialZone {
         display: none;
     }
 }
