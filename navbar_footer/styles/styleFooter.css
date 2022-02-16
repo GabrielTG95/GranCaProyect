@@ -109,6 +109,10 @@
     width: 50px;
 }
 
+.iconos img {
+    width: 50px;
+}
+
 .footer2 {
     text-align: center;
     padding: 0% 20%;
@@ -199,5 +203,8 @@
         border-radius: 20px;
         padding: 10px 2px;
         height: 150px;
+    }
+    .iconos img {
+        width: 30px;
     }
 }
