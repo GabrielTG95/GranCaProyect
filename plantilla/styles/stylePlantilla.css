@@ -5,12 +5,18 @@ section {
     align-items: center;
 }
 
+.imagenPlantilla {
+    display: flex;
+    margin: 0 auto;
+    width: 60rem;
+    padding-top: 10rem;
+}
+
 .card {
     margin: 2rem;
-    margin-top: 10rem;
+    margin-top: 3rem;
     width: 360px;
     height: 400px;
-    background: #000;
 }
 
 .card .image {
