@@ -21,23 +21,23 @@
     var funcion = function() {
         console.log($(window).width());
         if (($(window).scrollTop() > 50)) {
-            if (($(window).width() > 995)) {
+            if (($(window).width() > 1280)) {
                 console.log($(window).width());
                 $(".navbar").css({
-                    'height': "3.5rem",
+                    'height': "3.3rem",
                     'margin-top': "1rem"
                 });
                 $("#logoGranca").css({
                     'width': '4rem'
                 });
                 $("#logoGranca").css({
-                    'display': 'none'
+                    'display': 'inline-block'
                 });
 
             }
         }
         if (($(window).scrollTop() < 50)) {
-            if (($(window).width() > 995)) {
+            if (($(window).width() > 1280)) {
                 console.log($(window).width());
                 $(".navbar").css({
                     'height': "6rem",
@@ -49,7 +49,7 @@
             }
         }
     };
-    $(window).scroll(funcion).resize.funcion
+    $(window).scroll(funcion).resize.funcion;
 </script>
 
 <body>
