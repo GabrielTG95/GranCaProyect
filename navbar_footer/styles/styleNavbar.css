@@ -127,4 +127,8 @@ header {
 
 .cabecera {
     height: 50vh;
+    background-image: url('../../assets/cf015885-b50d-4300-8138-7440ce69ff15_21-9-aspect-ratio_default_0\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
