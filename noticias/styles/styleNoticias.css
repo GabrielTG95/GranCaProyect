@@ -35,5 +35,17 @@
 .buscar{
     width: 20%;
     float: right;
-    background-color: blue;
+    border: 0px solid black;
+}
+
+.buscador{
+    padding: 1px;
+    margin: 0% auto;
+    border: 1px solid black;
+    width: 60%;
+}
+.buscador input{
+    padding: 3px;
+    width: 90%;
+    border: 0px solid;
 }
