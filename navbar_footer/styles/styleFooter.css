@@ -183,7 +183,7 @@
         width: 70%;
     }
     .linea_temporal {
-        height: 230px;
+        height: 190px;
     }
     .div_derecha {
         margin-left: -5%;
@@ -206,5 +206,8 @@
     }
     .iconos img {
         width: 30px;
+    }
+    .comp_linea_temporal {
+        font-size: 20px;
     }
 }
