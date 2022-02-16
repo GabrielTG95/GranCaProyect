@@ -55,7 +55,7 @@ body {
     z-index: 10
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1280px) {
     .specialItem {
         background-color: #001896;
         border-radius: 0.3rem;
@@ -64,7 +64,20 @@ body {
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1603px) {
+    .wrapper {
+        display: none;
+    }
+    .specialItem {
+        border-radius: 0.3rem;
+        margin: .1rem;
+        background-color: #FFB718;
+        color: black !important;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 1198px) {
     .logo {
         display: none;
     }
