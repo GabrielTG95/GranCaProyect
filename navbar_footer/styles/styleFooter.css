@@ -1,0 +1,16 @@
+
+.fondo_footer{
+background-image: url("/assets/footer_fondo2.png");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.footer{
+    background-repeat: no-repeat;
+    background-color: rgba(80, 80, 248, 0.459);
+    padding: 0% 20%;
+}
+
+.footer2 {
+    padding: 0% 20%;
+}
