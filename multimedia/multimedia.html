@@ -1,27 +1,226 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <title>Multimedia</title>
-  <link rel="stylesheet" href="css/style.css">
+    <!-- Iconos -->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Hello, world!</title>
+
+    <link rel="stylesheet" href="styles/styleFooter.css">
+    <link rel="stylesheet" href="styles/styleNavbar.css">
+    <link rel="stylesheet" href="styles/styleMultimedia.css">
+
 </head>
+
+<script src="../navbar_footer/scripts/navbarscript.js"></script>
+<script>
+    $(window).on('resize scroll', function() {
+        if (($(window).scrollTop() > 50) && (($(window).width() > 1280))) {
+            $(".navbar").css({
+                'height': "3.3rem",
+                'margin-top': "1rem"
+            });
+            $("#logoGranca").css({
+                'width': '4rem'
+            });
+            $("#logoGranca").css({
+                'display': 'inline-block'
+            });
+
+        }
+
+        if (($(window).scrollTop() < 50) && (($(window).width() > 1280))) {
+            $(".navbar").css({
+                'height': "6rem",
+                'margin-top': "0"
+            });
+            $("#logoGranca").css({
+                'display': 'inline-block'
+            });
+        };
+    });
+</script>
+
 <body>
-  <div class="container-fluid">
-    <h1 class="bg-primary m-0">Cabecera</h1>
-    <div id="imagen_superior" class="d-flex align-items-center py-5 m-0">
-      <div id="filtro_superior"></div>
-      <h2 class="text-center w-100 my-5">MULTIMEDIA</h2>
-    </div>
-    <ul>
-      <li><a href="multimedia.html">Multimedia</a></li>
-      <li><a href="albumes.html">Albumes</a></li>
-      <li><a href="album.html">Album</a></li>
-      <li><a href="videos.html">Videos</a></li>
-      <li><a href="revista_marea_amarilla.html">Revista</a></li>
-    </ul>
-  </div>
+    <nav class="navbar navbar-expand-lg navbar-red navbar-dark  navbar-fixed-top">
+        <div class="wrapper"> </div>
+        <div class="container-fluid all-show">
+            <ul class="nav navbar-nav navbar-right logo">
+                <li>
+                    <a href="#"><img alt="logoGranca" src="../assets/logo_granca.png" id="logoGranca"></a>
+                </li>
+            </ul>
+            <a class="navbar-brand" href="#">GRANCACB 
+                <i class="fa fa-codepen"></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+                <span class="navbar-toggler-icon"></span> 
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-hover="dropdown" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">CLUB</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Historia y Palmarés</a>
+                            <a class="dropdown-item" href="#">Contacto</a>
+                            <a class="dropdown-item" href="#">Ayúdanos a mejorar</a>
+                            <a class="dropdown-item" href="#">Voluntarios</a>
+                            <a class="dropdown-item" href="#">Canal de denuncias</a>
+                            <a class="dropdown-item" href="#">Perfil de contratante</a>
+                            <a class="dropdown-item" href="#">Portal de transparencia</a>
+                            <!--
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+
+                            -->
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-hover="dropdown" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">EQUIPO</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Plantilla</a>
+                            <a class="dropdown-item" href="#">Partidos</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-hover="dropdown" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">NOTICIAS</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Liga endesa</a>
+                            <a class="dropdown-item" href="#">Eurocup</a>
+                            <a class="dropdown-item" href="#">Club</a>
+                            <a class="dropdown-item" href="#">Cantera</a>
+                            <a class="dropdown-item" href="#">ESports</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-hover="dropdown" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="multimedia.html">MULTIMEDIA</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="albumes.html">Fotos</a>
+                            <a class="dropdown-item" href="videos.html">Vídeos</a>
+                            <a class="dropdown-item" href="revista_marea_amarilla.html">Revista Marea Amarilla</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-hover="dropdown" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">ABONADOS</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Zona personal</a>
+                            <a class="dropdown-item" href="#">Web App Oficial</a>
+                            <a class="dropdown-item" href="#">Abono para la segunda vuelta</a>
+                            <a class="dropdown-item" href="#">Activación bono 21-22</a>
+                            <a class="dropdown-item" href="#">¿Cómo descargar tu abono digital?</a>
+                            <a class="dropdown-item" href="#">Ceder entrada o cambiar asiento</a>
+                            <a class="dropdown-item" href="#">Felicita en el videomarcador del Gran Canaria Arena</a>
+                        </div>
+                    </li>
+                    </li>
+                </ul>
+
+            </div>
+            <ul class="nav navbar-nav navbar-right specialZone">
+                <li class="nav-item "> <a class="nav-link specialItem" href="#">ZONA PERSONAL</a> </li>
+                <li class="nav-item"> <a class="nav-link specialItem" href="#">APP</a> </li>
+                <li class="nav-item"> <a class="nav-link specialItem" href="#">ESPORTS</a> </li>
+                <li class="nav-item"> <a class="nav-link specialItem" href="#">ENTRADAS</a> </li>
+        </div>
+    </nav>
+    <header>
+        <div class="cabecera bg-cover text-white">
+            <div class="container py-5 text-center font-weight-bold" id="tituloCabecera">
+                <h1 class="display-4 font-weight-bold">MULTIMEDIA</h1>
+            </div>
+            <div id="filtro_superior"></div>
+        </div>
+    </header>
+    <section>
+        <!--AQUI VA LA SECCION A REALIZAR-->
+        <h1>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt eros feugiat, euismod ante sollicitudin, porta ante. Quisque auctor eros vitae ante sodales pellentesque. Donec consectetur lectus non nisl posuere, ut euismod enim dignissim.
+            Quisque porttitor dolor vel cursus aliquet. Nam eros enim, venenatis at ligula eget, pharetra blandit urna. Nulla posuere justo odio. Sed molestie ligula justo. Donec at lacinia arcu. Morbi rutrum turpis quis vulputate pretium. Ut id molestie
+            felis. Sed purus arcu, dapibus eu lacinia eget, porttitor et nibh. Sed nec malesuada elit. Integer velit diam, venenatis quis magna eget, pharetra faucibus arcu. Fusce mattis, metus vel blandit mattis, massa sem ornare odio, vitae maximus
+            lorem dui non magna. Sed interdum dapibus sodales. In eget pulvinar felis. Integer eget eros blandit, commodo turpis semper, pretium ipsum. Curabitur pharetra ultrices sapien, a pulvinar risus egestas id. Maecenas orci tellus, vulputate a
+            pellentesque at, porta non odio. Proin tincidunt maximus tincidunt. Sed libero leo, vestibulum vel ligula sed, bibendum accumsan erat. Fusce ex velit, pretium at lacus sit amet, commodo aliquet arcu. Ut quam tortor, gravida sit amet tortor
+            vel, auctor vestibulum velit. Pellentesque non tellus id ipsum auctor tristique. Curabitur in laoreet diam. Sed rutrum quis enim pellentesque vehicula. Maecenas nec ultricies metus, sed faucibus tellus. Ut condimentum mi vitae vehicula molestie.
+            Morbi ac ante tellus. Praesent sed nisl sit amet tellus aliquet consectetur. Morbi ut libero blandit, pellentesque dolor non, ornare felis. Nam a diam dignissim, aliquet purus ut, sollicitudin nisi. Sed id urna convallis, vehicula erat sit
+            amet, bibendum purus. Praesent efficitur vel purus ac consectetur. Integer blandit ultricies felis quis faucibus. Vestibulum consequat nunc id consectetur convallis. Ut vulputate tortor orci, in imperdiet mi varius at. Phasellus nec nibh ipsum.
+            Fusce lobortis auctor sollicitudin. Curabitur nisl ligula, sagittis vel diam vitae, dictum faucibus arcu. Curabitur mattis nulla sit amet arcu lacinia, in pellentesque libero pellentesque. Aenean vulputate suscipit mi quis suscipit. Duis eu
+            vehicula nunc. Morbi rutrum nulla odio, a auctor lacus bibendum et. Etiam metus arcu, ultricies vel lacinia sit amet, ornare vel arcu. Etiam leo dui, hendrerit at commodo eget, tempor eu justo. In posuere elementum quam. In scelerisque sodales
+            nisl a sagittis. Sed volutpat fringilla massa ornare scelerisque. Morbi eu tellus risus. Vivamus sodales, libero quis volutpat dignissim, libero lectus egestas nulla, iaculis consectetur nibh est non odio. Curabitur sed neque purus. Aenean
+            nec mattis urna. Pellentesque rutrum, nisi vitae facilisis accumsan, arcu turpis congue tellus, ut mollis nibh dolor et orci. Maecenas in lacinia lorem. In massa leo, accumsan ac egestas ac, rhoncus vitae velit.
+        </h1>
+    </section>
+    <footer>
+        <div class="fondo_footer">
+            <div class="d-flex justify-content-evenly footer">
+
+
+                <div class="div_izquierda">
+                    <div class="foto_footer">
+                        <img style="width: 100%;" src="../assets/logo_granca.png">
+                    </div>
+                    <div class="menu_footer">
+                        <div class="linea_temporal">
+
+                        </div>
+                        <div class="comp_linea_temporal">
+
+                            <div class="guion"></div><a>LOCALIZACIÓN</a><br />
+                            <div class="guion"></div><a>EL CLUB</a><br />
+                            <div class="guion"></div><a>NOTICIAS</a><br />
+                            <div class="guion"></div><a>TIENDA</a><br />
+                            <div class="guion"></div><a>ENTRADAS</a><br />
+                            <div class="guion"></div><a>TWEETS</a><br />
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="div_derecha">
+                    <div class="foto_footer">
+                        <img style="width: 100%;" src="../assets/logo_liga_endesa_blanco.png">
+                    </div>
+
+                    <div class="siguenos">
+                        <h2>SIGUENOS</h2>
+                        <div class="sim_hr"></div>
+                        <div class="iconos">
+                            <img src="../assets/Twitter-logo.png">
+                            <img src="../assets/ytb-logo.png">
+                            <img src="../assets/Facebook_logo.png">
+                            <img src="../assets/tiktok_logo.png">
+                            <img src="../assets/instagram_logo.png">
+                            <img src="../assets/Whatsapp_logo.png">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer2 bg-warning d-flex py-2 justify-content-between text-primary">
+            <div>
+                © Club Baloncesto Gran Canaria
+            </div>
+            <div>
+                Política de privacidad - Protección de datos - Política de cookies
+            </div>
+        </div>
+    </footer>
+
 </body>
+<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js'></script>
+<script type='text/javascript' src=''></script>
+<script type='text/javascript' src=''></script>
+<script type='text/Javascript'></script>
+
+
 </html>
