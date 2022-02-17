@@ -56,5 +56,57 @@
 .noticias{
     width: 60%;
     margin: 0px auto;
-    border: 1px solid black;
+}
+.noticia{
+    margin-bottom: 150px;
+}
+.noticia h3{
+    text-align: center;
+    color: rgb(1, 1, 165);
+} 
+.noticia img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.opciones_noticia{
+    width: 100%;
+}
+.compartir{
+    width: 30%;
+    float: left;
+    display: flex;
+    justify-content: space-around;
+}
+.compartir img{
+    width: 50px;
+    height: 40px;
+    margin: 0px
+}
+.etiquetas{
+    padding: 0px 10px;
+    margin-left: 30%;
+    width: 40%;
+}
+.etiquetas span{
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+.dentro_etiquetas{
+    display: flex;
+    justify-content: center;
+}
+.etiqueta{
+    background-color: #FFB718;
+    padding: 5px;
+    font-weight: bold;
+    color: blue;
+    border: 2px solid blue;
+    margin-right: 5px;
+}
+.fecha{
+    text-align: center;
+    width: 30%;
+    float: right;
+    font-size: 20px;
 }
