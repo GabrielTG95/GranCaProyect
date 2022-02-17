@@ -1,0 +1,213 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.fondo_footer {
+    background-image: url("../../assets/footer_fondo2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer {
+    background-repeat: no-repeat;
+    background-color: rgba(80, 80, 248, 0.459);
+    padding: 2% 5% 0% 5%;
+}
+
+
+/*
+------------------------------------------------------
+
+                    Parte Izquierda
+
+------------------------------------------------------
+*/
+
+.div_izquierda {
+    width: 50%;
+    display: flex;
+}
+
+.div_izquierda .foto_footer {
+    width: 20%;
+    margin-right: 10%;
+}
+
+.menu_footer {
+    width: 70%;
+}
+
+.linea_temporal {
+    float: left;
+    width: 12px;
+    height: 200px;
+    background-color: blue;
+    border-radius: 10px;
+}
+
+.comp_linea_temporal {
+    font-size: 22px;
+    margin-bottom: 35px;
+    color: #FFB718;
+    font-weight: bold;
+}
+
+.guion {
+    margin-left: -5px;
+    margin-top: 12px;
+    float: left;
+    width: 30px;
+    height: 7px;
+    background-color: #FFB718;
+    border-radius: 10px;
+}
+
+
+/*
+------------------------------------------------------
+
+                    Parte Derecha
+
+------------------------------------------------------
+*/
+
+.div_derecha {
+    width: 50%;
+    display: flex;
+}
+
+.div_derecha .foto_footer {
+    width: 35%;
+    margin-right: 5%;
+}
+
+.siguenos {
+    color: blue;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 85%;
+    border-radius: 20px;
+    padding: 10px 15px;
+    height: 150px;
+}
+
+.sim_hr {
+    height: 5px;
+    width: 100%;
+    background-color: #FFB718;
+}
+
+.iconos {
+    margin: 20px 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto ;
+    gap: 10px;
+}
+
+.iconos img {
+    width: 50px;
+}
+
+.iconos img {
+    width: 50px;
+}
+
+.footer2 {
+    text-align: center;
+    padding: 0% 20%;
+}
+
+
+/*
+------------------------------------------------------
+
+                    Responsive
+
+------------------------------------------------------
+*/
+
+@media (max-width:1500px) {
+    .footer {
+        padding: 2% 10%;
+    }
+    .iconos {
+        margin: 20px 10px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+    }
+    .siguenos {
+        color: blue;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 60%;
+        height: 200px;
+    }
+}
+
+@media (max-width:1200px) {
+    .iconos {
+        grid-template-columns: auto auto auto;
+    }
+    .footer {
+        padding: 2% 5%;
+    }
+    .foto_footer {
+        width: 100px;
+    }
+    .footer2 {
+        padding: 0% 10%;
+    }
+}
+
+@media (max-width:900px) {
+    .iconos {
+        margin: 5px 0px;
+        gap: 5px;
+    }
+    .footer {
+        padding: 2% 0%;
+    }
+    .footer2 {
+        padding: 0% 1%;
+    }
+    .div_izquierda {
+        width: 70%;
+        display: flex;
+    }
+    .div_izquierda .foto_footer {
+        width: 20%;
+        margin-right: 2%;
+    }
+    .menu_footer {
+        width: 70%;
+    }
+    .linea_temporal {
+        height: 190px;
+    }
+    .div_derecha {
+        margin-left: -5%;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+    }
+    .div_derecha .foto_footer {
+        width: 50%;
+        margin: 10px auto;
+    }
+    .siguenos {
+        color: blue;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 100%;
+        text-align: center;
+        border-radius: 20px;
+        padding: 10px 2px;
+        height: 150px;
+    }
+    .iconos img {
+        width: 30px;
+    }
+    .comp_linea_temporal {
+        font-size: 20px;
+    }
+}
