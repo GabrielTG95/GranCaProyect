@@ -14,6 +14,9 @@
     float: left;
     text-align: center;
 }
+.mi-selector {
+    width: 75%;
+}
 
 .meses{
     margin-left: 20%;
@@ -98,17 +101,118 @@
 }
 .etiqueta{
     background-color: #FFB718;
-    padding: 5px;
-    font-weight: bold;
-    color: blue;
-    border: 2px solid blue;
+    padding: 8px;
     margin-right: 5px;
+    
 }
 .fecha{
     text-align: center;
     width: 30%;
     float: right;
     font-size: 20px;
+}
+
+@media (max-width:900px) {
+    
+    .años {
+        width: 40%;
+        float: left;
+        text-align: center;
+    }
+
+    .meses {
+        margin-left: 0%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .meses p {
+        font-size: 17px;
+    }
+
+    .sub_meses {
+        height: 4px;
+        margin-left: 0%;
+        width: 100%;
+        background-color: #FFB718;
+        margin-bottom: 30px;
+    }
+
+    .buscar {
+        width: 50%;
+        float: left;
+        border: 0px solid black;
+    }
+
+    .buscador {
+        padding: 1px 3px;
+        margin: 0% auto;
+        border: 1px solid black;
+        width: 90%;
+        margin-bottom: 5%;
+    }
+
+    .buscador input {
+        padding: 3px;
+        width: 90%;
+        border: 0px solid;
+    }
+
+    .noticias {
+        width: 80%;
+        margin: 0px auto;
+    }
+    .noticia {
+        margin-bottom: 85px;
+    }
+
+    .compartir {
+        position: relative;
+        width: 50%;
+        float: left;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .compartir img {
+        width: 50px;
+        height: 40px;
+        margin: 0px
+    }
+    
+
+    .etiquetas {
+        position: relative;
+        border: 1px solid rgb(238, 238, 238);
+        padding: 0px 10px;
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .etiquetas span {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .dentro_etiquetas {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .etiqueta {
+        background-color: #FFB718;
+        padding: 5px;
+        font-weight: bold;
+    }
+
+    .fecha {
+        height: 44px;
+        text-align: center;
+        width: 50%;
+        float: left;
+        font-size: 20px;
+    }
 }
 
 
