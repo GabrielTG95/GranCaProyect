@@ -1,0 +1,124 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+                                                    Historia y Palmares
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------*/
+
+h2{
+    text-align: left;
+    color: #010c70;
+}
+
+.historia{
+    text-align: justify;
+    width: 70%;
+    margin: 0px auto;
+}
+.historia2 {
+    text-align: justify;
+    width: 70%;
+    margin: 0px auto;
+}
+
+.historia img{
+    margin: 0px auto;
+    height: 400px;
+    margin-bottom: 90px;
+}
+
+.lin{
+    display: flex;
+    justify-content: start;
+}
+.l-azul{
+    width: 25px;
+    height: 60px;
+    background-color: #010c70;
+}
+.l-amarilla {
+    position: relative;
+    margin-left: -10px;
+    margin-top: 18px;
+    width: 28px;
+    height: 10px;
+    background-color: #FFB718;
+    border-radius: 20px;
+    margin-right: 7px;
+}
+.lin p{
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+@media (max-width:900px) {
+    .historia img {
+        margin: 0px auto;
+        height: 200px;
+        margin-bottom: 80px;
+    }
+
+    .l-azul {
+        width: 1px;
+        height: 120px;
+        background-color: #010c70;
+    }
+    .l-amarilla {
+        position: relative;
+        margin-left: -10px;
+        margin-top: 18px;
+        width: 18px;
+        height: 10px;
+        background-color: #FFB718;
+        border-radius: 20px;
+        margin-right: 7px;
+    }
+
+    .historia {
+        text-align: justify;
+        width: 90%;
+        margin: 0px auto;
+    }
+    .lin p {
+        font-size: 20px;
+        margin-top: 8px;
+    }
+    .historia2 {
+        text-align: justify;
+        width: 99%;
+        margin: 0px auto;
+    }
+
+}
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+                                                    Contacto
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------*/
+
+.lugar{
+    width: 70%;
+    margin: 0px auto;
+    background-color: #010c70;
+}
