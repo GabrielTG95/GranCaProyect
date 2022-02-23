@@ -1,0 +1,531 @@
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.imagenPlantilla {
+    display: flex;
+    margin: 0 auto;
+    max-width: 70%;
+    height: auto;
+    padding-top: 10rem;
+}
+
+#h2plantilla {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.card {
+    margin: 2rem;
+    margin-top: 3rem;
+    width: 360px;
+    height: 400px;
+}
+
+.card .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card .image img {
+    width: 100%;
+    transition: .5s;
+}
+
+.card:hover .image img {
+    opacity: .5;
+    transform: translateX(30%);
+    /*100%*/
+}
+
+.card .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    /*100%*/
+    height: 100%;
+    background: #ffc107;
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+
+.card:hover .details {
+    transform: perspective(2000px) rotateY(0deg);
+}
+
+.card .details .center {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card .details .center h1 {
+    margin: 0;
+    padding: 0;
+    color: #ff3636;
+    line-height: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.card .details .center h1 span {
+    font-size: 14px;
+    color: #262626;
+}
+
+.card .details .center p {
+    margin: 10px 0;
+    padding: 0;
+    color: #262626;
+}
+
+.card .details .center ul {
+    margin: 10px auto 0;
+    padding: 0;
+    display: table;
+}
+
+.card .details .center ul li {
+    list-style: none;
+    margin: 0 5px;
+    float: left;
+}
+
+.card .details .center ul li a {
+    display: block;
+    background: #262626;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transform: .5s;
+}
+
+.card .details .center ul li a:hover {
+    background: #ff3636;
+}
+
+
+/**/
+
+.slick-slider {
+    position: relative;
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0
+}
+
+.slick-list:focus {
+    outline: none
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+    content: ''
+}
+
+.slick-track:after {
+    clear: both
+}
+
+.slick-loading .slick-track {
+    visibility: hidden
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px
+}
+
+[dir='rtl'] .slick-slide {
+    float: right
+}
+
+.slick-slide img {
+    display: block
+}
+
+.slick-slide.slick-loading img {
+    display: none
+}
+
+.slick-slide.dragging img {
+    pointer-events: none
+}
+
+.slick-initialized .slick-slide {
+    display: block
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.menu_noticias {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.años {
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+
+.mi-selector {
+    width: 75%;
+}
+
+.meses {
+    margin-left: 20%;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.meses p {
+    font-size: 24px;
+}
+
+.sub_meses {
+    height: 4px;
+    margin-left: 20%;
+    width: 60%;
+    background-color: #FFB718;
+    margin-bottom: 30px;
+}
+
+.buscar {
+    width: 20%;
+    float: right;
+    border: 0px solid black;
+}
+
+.buscador {
+    padding: 1px 3px;
+    margin: 0% auto;
+    border: 1px solid black;
+    width: 60%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.buscador input {
+    padding: 3px;
+    width: 90%;
+    border: 0px solid;
+}
+
+.noticias {
+    width: 60%;
+    margin: 0px auto;
+}
+
+.noticia {
+    margin-bottom: 150px;
+}
+
+.noticia h3 {
+    text-align: center;
+    color: rgb(1, 1, 165);
+}
+
+.noticia img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.opciones_noticia {
+    width: 100%;
+}
+
+.compartir {
+    width: 30%;
+    float: left;
+    display: flex;
+    justify-content: space-around;
+}
+
+.compartir img {
+    width: 50px;
+    height: 40px;
+    margin: 0px
+}
+
+.etiquetas {
+    padding: 0px 10px;
+    margin-left: 30%;
+    width: 40%;
+}
+
+.etiquetas span {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dentro_etiquetas {
+    display: flex;
+    justify-content: center;
+}
+
+.etiqueta {
+    background-color: #FFB718;
+    padding: 8px;
+    margin-right: 5px;
+}
+
+.fecha {
+    text-align: center;
+    width: 30%;
+    float: right;
+    font-size: 20px;
+}
+
+.cadaPartido,
+.cadaPartidoNoJugado {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 3rem auto;
+    background-color: #FFF8E9;
+    border-radius: 1rem;
+    box-shadow: 5px 5px rgb(185, 185, 185);
+}
+
+.cadaPartidoNoJugado {
+    background-color: #EDF0FF;
+}
+
+.cadaPartido div,
+.cadaPartidoNoJugado div {
+    margin: 1rem;
+}
+
+.cadaPartido p,
+.cadaPartidoNoJugado p {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 136);
+}
+
+.cadaPartidoNoJugado p {
+    color: black;
+}
+
+.jornadaPartido {
+    border-right: 1px solid gray;
+    padding: 1rem;
+}
+
+.resultadoPartido {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.resultadoPartido p {
+    font-weight: normal;
+}
+
+.resumenPartido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resultadoPartido img {
+    margin: 1rem;
+}
+
+.comprarEntrada {
+    background-color: #FFF8E9;
+    border: 1px solid black;
+    padding: .5rem;
+    text-align: center;
+    border-radius: .3rem;
+}
+
+@media (max-width:900px) {
+    .años {
+        width: 40%;
+        float: left;
+        text-align: center;
+    }
+    .meses {
+        margin-left: 0%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .meses p {
+        font-size: 17px;
+    }
+    .sub_meses {
+        height: 4px;
+        margin-left: 0%;
+        width: 100%;
+        background-color: #FFB718;
+        margin-bottom: 30px;
+    }
+    .buscar {
+        width: 50%;
+        float: left;
+        border: 0px solid black;
+    }
+    .buscador {
+        padding: 1px 3px;
+        margin: 0% auto;
+        border: 1px solid black;
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    .buscador input {
+        padding: 3px;
+        width: 90%;
+        border: 0px solid;
+    }
+    .noticias {
+        width: 80%;
+        margin: 0px auto;
+    }
+    .noticia {
+        margin-bottom: 85px;
+    }
+    .compartir {
+        position: relative;
+        width: 50%;
+        float: left;
+        display: flex;
+        justify-content: space-around;
+    }
+    .compartir img {
+        width: 50px;
+        height: 40px;
+        margin: 0px
+    }
+    .etiquetas {
+        position: relative;
+        border: 1px solid rgb(238, 238, 238);
+        padding: 0px 10px;
+        margin-left: 0%;
+        width: 100%;
+    }
+    .etiquetas span {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .dentro_etiquetas {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    .etiqueta {
+        background-color: #FFB718;
+        padding: 5px;
+        font-weight: bold;
+    }
+    .fecha {
+        height: 44px;
+        text-align: center;
+        width: 50%;
+        float: left;
+        font-size: 20px;
+    }
+}
+
+@media (max-width:950px) {
+    .cadaPartidoNoJugado,
+    .cadaPartido {
+        display: flex;
+        justify-content: center;
+    }
+    .jornadaPartido {
+        display: none;
+    }
+    .fechaPartido {
+        display: none;
+    }
+    .resumenPartido {
+        display: none;
+    }
+    .noticiasPartido {
+        display: none;
+    }
+    .competicionPartido {
+        display: none;
+    }
+    .comprarEntrada {
+        width: 100%;
+    }
+}
