@@ -118,7 +118,63 @@ h2{
 -------------------------------------------------------------------------------------------------------------------------*/
 
 .lugar{
-    width: 70%;
+    text-align: center;
+    width: 60%;
     margin: 0px auto;
     background-color: #010c70;
+    padding-top: 20px;
+    margin-bottom: 120px;
+}
+
+.lugar h3{
+    color: #FFB718;
+    margin-bottom: 20px;
+}
+
+.lugar p{
+    color: white;
+}
+.lugar img{
+    width: 100%;
+    height: 400px;
+}
+
+.contactar{
+    width: 50%;
+    margin: 0px auto;
+}
+.contactar h2{
+    text-align: center;
+}
+
+.punto_contactar{
+    text-align: justify;
+    width: 75%;
+    margin: 40px auto;
+}
+.punto_contactar h4{
+    font-size: 23px;
+    text-align: center;
+}
+.preg_punto{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+@media (max-width:900px) {
+    .lugar {
+        text-align: center;
+        width: 80%;
+        margin-bottom: 80px;
+    }
+
+    .lugar img {
+        width: 100%;
+        height: 200px;
+    }
+    .contactar {
+        width: 90%;
+    }
+
 }
