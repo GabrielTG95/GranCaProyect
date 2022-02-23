@@ -8,13 +8,12 @@
 .iconos img {
     width: 50px;
     height: 40px;
-    filter: grayscale(100%);
+    filter: brightness(0) invert(1);
 }
 
 .iconos img:hover {
     filter: grayscale(0%);
 }
-
 
 footer {
     padding-top: 2em;
@@ -64,12 +63,10 @@ footer {
 }
 
 @media (max-width:900px) {
-    .borrar{
+    .borrar {
         display: none;
     }
-    .footer-04 .list-unstyled  {
+    .footer-04 .list-unstyled {
         display: none;
     }
 }
-
-
