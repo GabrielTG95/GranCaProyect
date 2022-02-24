@@ -55,6 +55,10 @@ section {
     transform: perspective(2000px) rotateY(-90deg);
 }
 
+.granca {
+    background-color: #ffebaf;
+}
+
 .card:hover .details {
     transform: perspective(2000px) rotateY(0deg);
 }
@@ -318,12 +322,21 @@ h2 {
     width: auto;
 }
 
-.container {
-    width: 1024px;
-    padding: 2em;
+.results tr[visible='false'],
+.no-result {
+    display: none;
 }
 
-.bold-blue {
-    font-weight: bold;
-    color: #0277BD;
+.results tr[visible='true'] {
+    display: table-row;
+}
+
+.tablaClasificacion {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.counter {
+    padding: 8px;
+    color: #ccc;
 }
