@@ -214,10 +214,52 @@
                     </p>
                 </div>
                 <div>
-                    <div class="form-floating mt-5 mb-4">
-                        <input type="text" name="nom_Blog" class="form-control" id="floatingInput"
-                            placeholder="Nombre del Blog:">
-                        <label for="floatingInput">Nombre del Blog:</label>
+                    <div class="form-floating col-10 mt-4 mb-3 mx-auto">
+                        <input type="text" name="nombre" class="form-control" id="floatingInput" placeholder="Nombre:">
+                        <label for="floatingInput">Nombre:</label>
+                    </div>
+                    <div class="form-floating col-10 mt-4 mb-3 mx-auto">
+                        <input type="text" name="email" class="form-control" id="floatingInput" placeholder="Email:">
+                        <label for="floatingInput">Email:</label>
+                    </div>
+                    <div class="form-floating col-10 mt-4 mb-3 mx-auto">
+                        <input type="text" name="asunto" class="form-control" id="floatingInput" placeholder="Asunto:">
+                        <label for="floatingInput">Asunto:</label>
+                    </div>
+                    <div class="form-floating col-10 mt-4 mb-3 mx-auto">
+                        <h5>Tipo de consulta:</h5>
+                        <select name="consulta">
+                            <option selected disabled >Tipo de consulta</option>
+                            <option value="duda">Duda</option>
+                            <option value="reclamacion">Reclamación</option>
+                        </select>
+                    </div>
+                    <div class="form-floating col-10 mt-4 mb-3 mx-auto">
+                        <textarea placeholder="Mensaje:" name="mensaje" ></textarea>
+                    </div>
+                    <div class="form-floating col-10 mt-4 mb-3 mx-auto">
+                        <h5>Adjuntar fichero:</h5>
+                        <div class="subir_fich">
+                            <input type="file" >
+                        </div>
+                    </div>
+                    <div class="form-floating col-10 mt-4 mb-3 mx-auto">
+                        <p class="pequeñito" >El Responsable del tratamiento de sus datos es el Club Baloncesto Gran Canaria Claret, S.A.D.
+                            con domicilio en C/ Córdoba 31-A, 35016 Las Palmas de Gran Canaria. Sus datos serán usados
+                            para poder atender sus solicitudes y prestarle nuestros servicios. Únicamente trataremos sus
+                            datos con su consentimiento previo, que podrá facilitarnos mediante la casilla
+                            correspondiente establecida al efecto. Con carácter general, sólo el personal de nuestra
+                            entidad que esté debidamente autorizado podrá tener conocimiento de la información que le
+                            pedimos. Tiene derecho a saber qué información tenemos sobre usted, corregirla y eliminarla,
+                            tal y como se explica en la información adicional disponible en el apartado política de
+                            privacidad.</p>
+                    </div>
+                    <div class="form-floating col-10 mt-4 mb-3 mx-auto">
+                        <input type="checkbox"><span class="ms-2">He leído y acepto las condiciones de la política de privacidad.</span><br/>
+                        <input type="checkbox"><span class="ms-2">Consiento el uso de mis datos personales para recibir publicidad de su entidad.</span><br />
+                    </div>
+                    <div class="form-floating col-10 mt-4 mb-3 mx-auto text-center ">
+                        <button class="enviar p-3">ENVIAR</button>
                     </div>
                 </div>
                 

@@ -33,34 +33,117 @@ h2{
 }
 
 .historia img{
-    margin: 0px auto;
     height: 400px;
     margin-bottom: 90px;
 }
 
-.lin{
+
+
+
+
+.timeline-date-row {
+    overflow: hidden;
+}
+
+.timeline-dates-list {
     display: flex;
-    justify-content: start;
-}
-.l-azul{
-    width: 25px;
-    height: 60px;
-    background-color: #010c70;
-}
-.l-amarilla {
+    justify-content: space-around;
+    width: 130%;
+    height: 300px;
+    left: 200px;
     position: relative;
-    margin-left: -10px;
-    margin-top: 18px;
-    width: 28px;
-    height: 10px;
+    transform: translate3d(0, 0, 0);
+    transition: all 500ms linear;
+    list-style:none;
+}
+
+.timeline-date.isActive .timeline-marker-inner {
     background-color: #FFB718;
-    border-radius: 20px;
-    margin-right: 7px;
 }
-.lin p{
+
+.timeline-date.isActive .timeline-marker-line:before {
+    height: 100%;
+    
+}
+
+.timeline-date.isActive .timeline-date-content {
+    z-index: 1;
+    opacity: 1;
+    margin-top: 50px;
+    transform: scale(1);
+    
+}
+
+.timeline-date.isActive h4 {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.timeline-date h4 {
+    opacity: 0;
+    margin-top: 33px;
+    text-align: right;
+    position: relative;
+    right: 80px;
+    font-size: 24px;
+    transform: scale(.75);
+    transition: opacity 400ms linear;
+}
+
+.timeline-date h5 {
+    margin-bottom: 10px;
     font-size: 20px;
-    margin-top: 8px;
 }
+
+.timeline-date .timeline-marker {
+    padding: 15px;
+}
+
+.timeline-date .timeline-marker:hover {
+    cursor: pointer;
+}
+
+.timeline-date .timeline-marker-inner {
+    height: 9px;
+    width: 9px;
+    background-color: #010c70;
+    border-radius: 50%;
+    position: relative;
+}
+
+.timeline-date .timeline-date-content {
+    height: auto;
+    width: 200px;
+    opacity: 0;
+    transform: scale(.75);
+    transition: opacity 400ms ease;
+    position: relative;
+    z-index: -1;
+    
+}
+
+.timeline-date .timeline-marker-line {
+    padding-left: 20px;
+    margin-left: 19px;
+    position: absolute;
+    top: 20px;
+    
+}
+
+.timeline-date .timeline-marker-line:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 2px;
+    background-color: #FFB718;
+    
+}
+.linea_tiempo{
+    width: 100%;
+}
+
 
 @media (max-width:900px) {
     .historia img {
@@ -69,31 +152,25 @@ h2{
         margin-bottom: 80px;
     }
 
-    .l-azul {
-        width: 1px;
-        height: 120px;
-        background-color: #010c70;
-    }
-    .l-amarilla {
+    .timeline-dates-list {
+        display: flex;
+        justify-content: space-around;
+        width: 130%;
+        height: 300px;
+        left: 500px;
         position: relative;
-        margin-left: -10px;
-        margin-top: 18px;
-        width: 18px;
-        height: 10px;
-        background-color: #FFB718;
-        border-radius: 20px;
-        margin-right: 7px;
+        transform: translate3d(0, 0, 0);
+        transition: all 500ms linear;
+        list-style: none;
     }
+
 
     .historia {
         text-align: justify;
         width: 90%;
         margin: 0px auto;
     }
-    .lin p {
-        font-size: 20px;
-        margin-top: 8px;
-    }
+
     .historia2 {
         text-align: justify;
         width: 99%;
@@ -159,6 +236,45 @@ h2{
 .preg_punto{
     text-align: center;
     font-weight: bold;
+}
+
+select{
+    width: 100%;
+    background-color: white;
+    padding: 8px;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 5px;
+}
+
+textarea{
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 5px;
+}
+
+.subir_fich{
+    width: 100%;
+    background-color: white;
+    padding: 9px;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 5px;
+}
+.pequeñito{
+    font-size: 12px;
+    text-align: justify;
+    padding: 2px;
+}
+
+.enviar{
+    width: 60%;
+    border: 2px solid #010c70;
+    background-color: #010c70;
+    color: #FFB718;
+    font-size: 20px;
+    font-weight: bold;
+
 }
 
 
