@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 /* -------------------------------------------------------------------------------------------------------------------------
 
 
@@ -16,30 +17,27 @@
 
 -------------------------------------------------------------------------------------------------------------------------*/
 
-h2{
+h2 {
     text-align: left;
     color: #010c70;
 }
 
-.historia{
+.historia {
     text-align: justify;
     width: 70%;
     margin: 0px auto;
 }
+
 .historia2 {
     text-align: justify;
     width: 70%;
     margin: 0px auto;
 }
 
-.historia img{
+.historia img {
     height: 400px;
     margin-bottom: 90px;
 }
-
-
-
-
 
 .timeline-date-row {
     overflow: hidden;
@@ -54,7 +52,7 @@ h2{
     position: relative;
     transform: translate3d(0, 0, 0);
     transition: all 500ms linear;
-    list-style:none;
+    list-style: none;
 }
 
 .timeline-date.isActive .timeline-marker-inner {
@@ -63,7 +61,6 @@ h2{
 
 .timeline-date.isActive .timeline-marker-line:before {
     height: 100%;
-    
 }
 
 .timeline-date.isActive .timeline-date-content {
@@ -71,7 +68,6 @@ h2{
     opacity: 1;
     margin-top: 50px;
     transform: scale(1);
-    
 }
 
 .timeline-date.isActive h4 {
@@ -119,7 +115,6 @@ h2{
     transition: opacity 400ms ease;
     position: relative;
     z-index: -1;
-    
 }
 
 .timeline-date .timeline-marker-line {
@@ -127,7 +122,6 @@ h2{
     margin-left: 19px;
     position: absolute;
     top: 20px;
-    
 }
 
 .timeline-date .timeline-marker-line:before {
@@ -138,12 +132,11 @@ h2{
     height: 0;
     width: 2px;
     background-color: #FFB718;
-    
-}
-.linea_tiempo{
-    width: 100%;
 }
 
+.linea_tiempo {
+    width: 100%;
+}
 
 @media (max-width:900px) {
     .historia img {
@@ -151,7 +144,6 @@ h2{
         height: 200px;
         margin-bottom: 80px;
     }
-
     .timeline-dates-list {
         display: flex;
         justify-content: space-around;
@@ -163,23 +155,17 @@ h2{
         transition: all 500ms linear;
         list-style: none;
     }
-
-
     .historia {
         text-align: justify;
         width: 90%;
         margin: 0px auto;
     }
-
     .historia2 {
         text-align: justify;
         width: 99%;
         margin: 0px auto;
     }
-
 }
-
-
 
 
 /* -------------------------------------------------------------------------------------------------------------------------
@@ -194,7 +180,7 @@ h2{
 
 -------------------------------------------------------------------------------------------------------------------------*/
 
-.lugar{
+.lugar {
     text-align: center;
     width: 60%;
     margin: 0px auto;
@@ -203,42 +189,46 @@ h2{
     margin-bottom: 120px;
 }
 
-.lugar h3{
+.lugar h3 {
     color: #FFB718;
     margin-bottom: 20px;
 }
 
-.lugar p{
+.lugar p {
     color: white;
 }
-.lugar img{
+
+.lugar img {
     width: 100%;
     height: 400px;
 }
 
-.contactar{
+.contactar {
     width: 50%;
     margin: 0px auto;
 }
-.contactar h2{
+
+.contactar h2 {
     text-align: center;
 }
 
-.punto_contactar{
+.punto_contactar {
     text-align: justify;
     width: 75%;
     margin: 40px auto;
 }
-.punto_contactar h4{
+
+.punto_contactar h4 {
     font-size: 23px;
     text-align: center;
 }
-.preg_punto{
+
+.preg_punto {
     text-align: center;
     font-weight: bold;
 }
 
-select{
+select {
     width: 100%;
     background-color: white;
     padding: 8px;
@@ -246,7 +236,7 @@ select{
     border-radius: 5px;
 }
 
-textarea{
+textarea {
     width: 100%;
     height: 100px;
     padding: 5px;
@@ -254,29 +244,28 @@ textarea{
     border-radius: 5px;
 }
 
-.subir_fich{
+.subir_fich {
     width: 100%;
     background-color: white;
     padding: 9px;
     border: 1px solid rgb(197, 197, 197);
     border-radius: 5px;
 }
-.pequeñito{
+
+.pequeñito {
     font-size: 12px;
     text-align: justify;
     padding: 2px;
 }
 
-.enviar{
+.enviar {
     width: 60%;
     border: 2px solid #010c70;
     background-color: #010c70;
     color: #FFB718;
     font-size: 20px;
     font-weight: bold;
-
 }
-
 
 @media (max-width:900px) {
     .lugar {
@@ -284,7 +273,6 @@ textarea{
         width: 80%;
         margin-bottom: 80px;
     }
-
     .lugar img {
         width: 100%;
         height: 200px;
@@ -292,5 +280,4 @@ textarea{
     .contactar {
         width: 90%;
     }
-
 }
