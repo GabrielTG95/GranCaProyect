@@ -16,6 +16,8 @@
 
     <title>Hello, world!</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../navbar_footer/styles/styleFooter.css">
     <link rel="stylesheet" href="../navbar_footer/styles/styleNavbar.css">
     <link rel="stylesheet" href="styles/styleClub.css">
@@ -141,7 +143,7 @@
     <header>
         <div class="cabecera bg-cover text-white">
             <div class="container py-5 text-center">
-                <h1 class="display-4 font-weight-bold">Historia y Palmares</h1>
+                <h1 class="display-4 font-weight-bold">Ayudanos a mejorar</h1>
                 <p class="font-italic mb-0">Using simple jumbotron-style component, create a nice Bootstrap 4 header
                     with a background image.</p>
                 <p class="font-italic">Snippe by
@@ -154,12 +156,15 @@
     </header>
     <section>
         <div class="mt-4 anc">
-            <div class="ayudanos">
+            <div class=" ayudanos">
                 <h2>AYUDANOS A MEJORAR</h2>
-                <p>¿Te gustaría hacernos llegar algún comentario o sugerencia? Envíanos este formulario.<br/>
-                Gracias por tu colaboración.<br/>
-                Todos los campos marcados con * son obligatorios.
-                </p>
+                <div class="col-10 mt-4 mb-3 mx-auto">
+                    <p>¿Te gustaría hacernos llegar algún comentario o sugerencia? Envíanos este formulario.<br/>
+                    Gracias por tu colaboración.<br/>
+                    Todos los campos marcados con * son obligatorios.
+                    </p>
+                </div>
+                
                     <div class="form-floating col-10 mt-4 mb-3 mx-auto">
                         <input type="text" name="nombre" class="form-control" id="floatingInput" placeholder="Nombre*:">
                         <label for="floatingInput">Nombre*:</label>
@@ -173,7 +178,7 @@
                     </div>
                     <div class="form-floating col-10 mt-4 mb-3 mx-auto d-flex">
                         <p class="captcha">FLK2NAR</p>
-                        <input type="text" name="nombre" class=" w-50 form-control" id="floatingInput" placeholder="Nombre*:">
+                        <input type="text" name="nombre" class=" w-75 form-control" id="floatingInput" style="padding-bottom: 27px;">
                     </div>
                     
                     <div class="form-floating col-10 mt-4 mb-3 mx-auto">
@@ -189,10 +194,7 @@
                             privacidad.</p>
                     </div>
                     <div class="form-floating col-10 mt-4 mb-3 mx-auto">
-                        <input type="checkbox"><span class="ms-2">He leído y acepto las condiciones de la política de
-                            privacidad.</span><br />
-                        <input type="checkbox"><span class="ms-2">Consiento el uso de mis datos personales para recibir
-                            publicidad de su entidad.</span><br />
+                        <input type="checkbox"><span class="ms-2">He leído y acepto las condiciones de la <a href="Politicas_priv.html" >política de privacidad</a>.</span><br />
                     </div>
                     <div class="form-floating col-10 mt-4 mb-3 mx-auto text-center ">
                         <button class="enviar p-3">ENVIAR</button>
@@ -200,35 +202,53 @@
             </div>
             <div class="voluntarios">
                 <h2>VOLUNTARIOS</h2>
+                <div class="col-10 mt-4 mb-3 mx-auto">
+                    <img src="../assets/Club/voluntarios.jpg" style="width: 100%;">
+                    <p>
+                        ¿Te gusta el baloncesto? ¿Te gustaría colaborar y vivir lo más cerca posible este deporte viendo
+                        de
+                        cerca a las estrellas de la mejor liga? Si sientes los colores del Gran Canaria, tienes más de
+                        18
+                        años y eres una persona activa, responsable y comprometida, ahora lo tienes fácil, ya que
+                        podrías
+                        serlo cumplimentando un formulario. A medida que se necesitase incorporar más voluntarios, nos
+                        pondríamos en contacto para hacer una selección previa de los candidatos.<br />
+
+                        El cuerpo de voluntarios es fundamental para la correcta ejecución de un partido de baloncesto.
+                        Podrás vivir desde dentro todos los partidos, participar en las distintas actividades y
+                        concursos
+                        que tienen lugar en los encuentros del primer equipo, así como en todos los detalles
+                        relacionados
+                        con la logística del mismo.<br />
+
+                        Si estás interesado en ser voluntario del Gran Canaria, rellena este formulario:<br />
+                    </p>
+                </div>
+                
                 <div class="form-floating col-10 mt-4 mb-3 mx-auto">
-                    <input type="text" name="nombre" class="form-control" id="floatingInput" placeholder="Nombre:">
-                    <label for="floatingInput">Nombre:</label>
+                    <input type="text" name="nombre" class="form-control" id="floatingInput" placeholder="Nombre*:">
+                    <label for="floatingInput">Nombre*:</label>
                 </div>
                 <div class="form-floating col-10 mt-4 mb-3 mx-auto">
-                    <input type="text" name="email" class="form-control" id="floatingInput" placeholder="Email:">
-                    <label for="floatingInput">Email:</label>
+                    <input type="text" name="email" class="form-control" id="floatingInput" placeholder="Email*:">
+                    <label for="floatingInput">Email*:</label>
                 </div>
                 <div class="form-floating col-10 mt-4 mb-3 mx-auto">
-                    <input type="text" name="asunto" class="form-control" id="floatingInput" placeholder="Asunto:">
-                    <label for="floatingInput">Asunto:</label>
+                    <input type="text" name="email" class="form-control" id="floatingInput" placeholder="Telefono*:">
+                    <label for="floatingInput">Telefono*:</label>
                 </div>
                 <div class="form-floating col-10 mt-4 mb-3 mx-auto">
-                    <h5>Tipo de consulta:</h5>
-                    <select name="consulta">
-                        <option selected disabled>Tipo de consulta</option>
-                        <option value="duda">Duda</option>
-                        <option value="reclamacion">Reclamación</option>
-                    </select>
+                    <input type="text" name="email" class="form-control" id="floatingInput" placeholder="Edad*:">
+                    <label for="floatingInput">Edad*:</label>
                 </div>
                 <div class="form-floating col-10 mt-4 mb-3 mx-auto">
-                    <textarea placeholder="Mensaje:" name="mensaje"></textarea>
+                    <textarea placeholder="Comentario:" name="mensaje"></textarea>
                 </div>
-                <div class="form-floating col-10 mt-4 mb-3 mx-auto">
-                    <h5>Adjuntar fichero:</h5>
-                    <div class="subir_fich">
-                        <input type="file">
-                    </div>
+                <div class="form-floating col-10 mt-4 mb-3 mx-auto d-flex">
+                    <p class="captcha">BU4EYS9PA</p>
+                    <input type="text" name="nombre" class=" w-75 form-control" id="floatingInput" style="padding-bottom: 27px;">
                 </div>
+
                 <div class="form-floating col-10 mt-4 mb-3 mx-auto">
                     <p class="pequeñito">El Responsable del tratamiento de sus datos es el Club Baloncesto Gran
                         Canaria Claret, S.A.D.
@@ -242,10 +262,8 @@
                         privacidad.</p>
                 </div>
                 <div class="form-floating col-10 mt-4 mb-3 mx-auto">
-                    <input type="checkbox"><span class="ms-2">He leído y acepto las condiciones de la política de
-                        privacidad.</span><br />
-                    <input type="checkbox"><span class="ms-2">Consiento el uso de mis datos personales para recibir
-                        publicidad de su entidad.</span><br />
+                    <input type="checkbox"><span class="ms-2">He leído y acepto las condiciones de la <a
+                            href="Politicas_priv.html">política de privacidad</a>.</span><br />
                 </div>
                 <div class="form-floating col-10 mt-4 mb-3 mx-auto text-center ">
                     <button class="enviar p-3">ENVIAR</button>
@@ -253,35 +271,52 @@
             </div>
             <div class="denuncias">
                 <h2>CANAL DENUNCIAS</h2>
-                <div class="form-floating col-10 mt-4 mb-3 mx-auto">
-                    <input type="text" name="nombre" class="form-control" id="floatingInput" placeholder="Nombre:">
-                    <label for="floatingInput">Nombre:</label>
+                <div class="col-10 mt-4 mb-3 mx-auto">
+                    <p>
+                        Todos los campos marcados con * son obligatorios.
+                    </p>
                 </div>
                 <div class="form-floating col-10 mt-4 mb-3 mx-auto">
-                    <input type="text" name="email" class="form-control" id="floatingInput" placeholder="Email:">
-                    <label for="floatingInput">Email:</label>
+                    <input type="text" name="nombre" class="form-control" id="floatingInput" placeholder="Nombre*:">
+                    <label for="floatingInput">Nombre*:</label>
                 </div>
                 <div class="form-floating col-10 mt-4 mb-3 mx-auto">
-                    <input type="text" name="asunto" class="form-control" id="floatingInput" placeholder="Asunto:">
-                    <label for="floatingInput">Asunto:</label>
+                    <input type="text" name="dni" class="form-control" id="floatingInput" placeholder="DNI*:">
+                    <label for="floatingInput">DNI*:</label>
                 </div>
                 <div class="form-floating col-10 mt-4 mb-3 mx-auto">
-                    <h5>Tipo de consulta:</h5>
-                    <select name="consulta">
-                        <option selected disabled>Tipo de consulta</option>
-                        <option value="duda">Duda</option>
-                        <option value="reclamacion">Reclamación</option>
-                    </select>
+                    <input type="text" name="Direccion_postal" class="form-control" id="floatingInput"
+                        placeholder="Dirección postal*:">
+                    <label for="floatingInput">Dirección postal*:</label>
                 </div>
                 <div class="form-floating col-10 mt-4 mb-3 mx-auto">
-                    <textarea placeholder="Mensaje:" name="mensaje"></textarea>
+                    <input type="text" name="email" class="form-control" id="floatingInput" placeholder="Email*:">
+                    <label for="floatingInput">Email*:</label>
                 </div>
                 <div class="form-floating col-10 mt-4 mb-3 mx-auto">
-                    <h5>Adjuntar fichero:</h5>
-                    <div class="subir_fich">
-                        <input type="file">
-                    </div>
+                    <input type="text" name="email" class="form-control" id="floatingInput" placeholder="Telefono*:">
+                    <label for="floatingInput">Telefono*:</label>
                 </div>
+                <div class="form-floating col-10 mt-4 mb-3 mx-auto">
+                    <textarea placeholder="Descripción detallada de la irregularidad*:" name="Descripcion"></textarea>
+                </div>
+                <div class="form-floating col-10 mt-4 mb-3 mx-auto">
+                    <input type="text" name="irregularidad" class="form-control" id="floatingInput" placeholder="Persona o personas responsables de la irregularidad*:">
+                    <label for="floatingInput">Persona o personas responsables de la irregularidad*:</label>
+                </div>
+                <div class="form-floating col-10 mt-4 mb-3 mx-auto">
+                    <input type="text" name="moemnto" class="form-control" id="floatingInput" placeholder="Momento en el que ocurrió e indicar si en la actualidad sigue ocurriendo*:">
+                    <label for="floatingInput">Momento en el que ocurrió e indicar si en la actualidad sigue ocurriendo*:</label>
+                </div>
+                <div class="form-floating col-10 mt-4 mb-3 mx-auto">
+                    <textarea placeholder="Otra información:" name="informacion"></textarea>
+                </div>
+                <div class="form-floating col-10 mt-4 mb-3 mx-auto d-flex">
+                    <p class="captcha">P3TCMW6</p>
+                    <input type="text" name="nombre" class=" w-75 form-control" id="floatingInput"
+                        style="padding-bottom: 27px;">
+                </div>
+
                 <div class="form-floating col-10 mt-4 mb-3 mx-auto">
                     <p class="pequeñito">El Responsable del tratamiento de sus datos es el Club Baloncesto Gran
                         Canaria Claret, S.A.D.
@@ -295,10 +330,8 @@
                         privacidad.</p>
                 </div>
                 <div class="form-floating col-10 mt-4 mb-3 mx-auto">
-                    <input type="checkbox"><span class="ms-2">He leído y acepto las condiciones de la política de
-                        privacidad.</span><br />
-                    <input type="checkbox"><span class="ms-2">Consiento el uso de mis datos personales para recibir
-                        publicidad de su entidad.</span><br />
+                    <input type="checkbox"><span class="ms-2">He leído y acepto las condiciones de la <a
+                            href="Politicas_priv.html">política de privacidad</a>.</span><br />
                 </div>
                 <div class="form-floating col-10 mt-4 mb-3 mx-auto text-center ">
                     <button class="enviar p-3">ENVIAR</button>
