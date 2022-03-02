@@ -1,0 +1,14 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.cabecera {
+    padding-top: 8rem;
+    height: 80vh;
+    background-image: url('../../assets/Abonados/web_app.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
