@@ -12,3 +12,18 @@
     background-size: cover;
     background-position: center;
 }
+
+
+.web_app {
+    width: 60%;
+    margin: 0px auto 100px auto;
+}
+
+.web_app h2{
+    text-align: center;
+    color: #010c70;
+    
+}
+.web_app h4 {
+    color: #010c70;
+}

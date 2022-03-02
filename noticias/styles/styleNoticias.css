@@ -42,19 +42,7 @@
     border: 0px solid black;
 }
 
-.buscador{
-    padding: 1px 3px;
-    margin: 0% auto;
-    border: 1px solid black;
-    width: 60%;
-    border-radius: 10px;
-    background-color: white;
-}
-.buscador input{
-    padding: 3px;
-    width: 90%;
-    border: 0px solid;
-}
+
 
 .noticias{
     width: 60%;
