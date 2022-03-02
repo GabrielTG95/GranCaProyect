@@ -27,3 +27,22 @@
 .web_app h4 {
     color: #010c70;
 }
+
+.div_int {
+    height: 100px;
+    display: flex;
+}
+
+.interrogantes{
+    width: 5%;
+    font-size: 60px;
+    color: #010c70;
+    font-weight: bold;
+    font-family: Smooch Sans;
+    margin-right: 10px;
+}
+
+.post_int{
+    width: 90%;
+    margin-top: 22px;
+}
