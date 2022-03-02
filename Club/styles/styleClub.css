@@ -17,7 +17,7 @@
 
 -------------------------------------------------------------------------------------------------------------------------*/
 
-h2 {
+.hyp h2 {
     text-align: left;
     color: #010c70;
 }
@@ -269,6 +269,27 @@ textarea {
     font-weight: bold;
 }
 
+.div_contacta{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.contacta{
+    padding: 20px;
+
+    width: 50%;
+    background-color: #010c70;
+    color: #FFB718;
+    border: 0px;
+    border-radius: 10px;
+}
+.contacta h2 {
+    font-size: 25px;
+}
+.contacta h2:hover {
+    font-size: 40px;
+    transition: 1s;
+}
+
 @media (max-width:900px) {
     .lugar {
         text-align: center;
@@ -280,6 +301,11 @@ textarea {
         height: 200px;
     }
     .contactar {
+        width: 90%;
+    }
+    .contacta {
+        padding: 20px;
+
         width: 90%;
     }
 }
