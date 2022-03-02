@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
 /* -------------------------------------------------------------------------------------------------------------------------
 
@@ -345,4 +346,11 @@ textarea {
 .denuncias{
     width: 50%;
     margin: 0px auto 100px auto;
+}
+
+.captcha{
+    font-size: 25px;
+    margin-top: 5px;
+    margin-right: 40px;
+    font-family: 'Rock Salt', cursive;
 }
