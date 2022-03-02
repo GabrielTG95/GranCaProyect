@@ -55,9 +55,16 @@ body {
     font-size: 27px
 }
 
+.dropdown-item {
+    border-bottom: 1px solid #001896;
+}
+
+.dropdown-item:last-child {
+    border-bottom: 0;
+}
+
 .nav-link:hover {
     color: #FFB718 !important;
-    border-bottom: 3px solid #FFB718
 }
 
 .navbar-red:hover .wrapper {
