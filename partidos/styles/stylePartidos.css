@@ -5,8 +5,16 @@ section {
     align-items: center;
 }
 
+.competicionPartido img {
+    width: 9rem;
+}
+
 a {
     text-decoration: none;
+}
+
+.años {
+    float: left;
 }
 
 .imagenPlantilla {
@@ -241,6 +249,7 @@ a {
 
 .mi-selector {
     width: 75%;
+    margin-left: 2rem;
 }
 
 .meses {
@@ -263,24 +272,10 @@ a {
 }
 
 .buscar {
-    width: 20%;
+    width: 10%;
+    margin-right: 3rem;
     float: right;
     border: 0px solid black;
-}
-
-.buscador {
-    padding: 1px 3px;
-    margin: 0% auto;
-    border: 1px solid black;
-    width: 60%;
-    border-radius: 10px;
-    background-color: white;
-}
-
-.buscador input {
-    padding: 3px;
-    width: 90%;
-    border: 0px solid;
 }
 
 .noticias {
