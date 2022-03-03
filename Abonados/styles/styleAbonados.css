@@ -16,7 +16,7 @@
 
 .web_app {
     width: 60%;
-    margin: 0px auto 100px auto;
+    margin: 0px auto;
 }
 
 .web_app h2{
@@ -45,4 +45,27 @@
 .post_int{
     width: 90%;
     margin-top: 22px;
+}
+
+.app{
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.app img{
+    width: 12%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 5px rgb(73, 73, 73);
+    filter: grayscale(80%);
+}
+
+#tres:hover{
+    width: 15%;
+    transition: 1s;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 5px rgb(73, 73, 73);
+    filter: grayscale(0%);
 }
