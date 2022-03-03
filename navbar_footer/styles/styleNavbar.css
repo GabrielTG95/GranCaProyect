@@ -26,6 +26,13 @@
             background-size: cover;
             background-position: center;
         }
+
+        .titulazo {
+            font-family: Bebas Neue;
+            font-size: 80px;
+            letter-spacing: 0.5rem;
+            color: #010c70;
+        }
         
         .navbar-nav>li>a {
             text-transform: uppercase;
