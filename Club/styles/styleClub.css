@@ -41,6 +41,14 @@ h2{
     margin-bottom: 90px;
 }
 
+.slide{
+    width: 60%;
+    margin: 0px auto;
+}
+.no_ver{
+    display: none;
+}
+
 .timeline-date-row {
     overflow: hidden;
 }
