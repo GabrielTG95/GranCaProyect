@@ -37,13 +37,13 @@
 }
 
 .div_int {
-    height: 100px;
+    height: 80px;
     display: flex;
 }
 
 .interrogantes{
     width: 5%;
-    font-size: 60px;
+    font-size: 50px;
     color: #010c70;
     font-weight: bold;
     font-family: Smooch Sans;
@@ -52,7 +52,7 @@
 
 .post_int{
     width: 90%;
-    margin-top: 22px;
+    margin-top: 18px;
 }
 
 .app{
@@ -89,7 +89,7 @@
     }
     .interrogantes {
         width: 5%;
-        font-size: 60px;
+        font-size: 50px;
         color: #010c70;
         font-weight: bold;
         font-family: Smooch Sans;
