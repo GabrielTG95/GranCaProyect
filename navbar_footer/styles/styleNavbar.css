@@ -1,0 +1,166 @@
+        @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+        body {
+            background-color: #eee
+        }
+        
+        .navbar {
+            position: fixed;
+            width: 100%;
+            z-index: 3;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+        }
+        
+        .nav-link {
+            color: white !important;
+        }
+        
+        .cabecera {
+            padding-top: 8rem;
+            height: 50vh;
+            background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url('../../assets/cf015885-b50d-4300-8138-7440ce69ff15_21-9-aspect-ratio_default_0\ 1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .titulazo {
+            font-family: Bebas Neue;
+            font-size: 80px;
+            letter-spacing: 0.5rem;
+            color: #010c70;
+        }
+        
+        .navbar-nav>li>a {
+            text-transform: uppercase;
+            font-size: 1rem;
+            margin-right: 20px;
+            color: #fff;
+            font-weight: bold;
+        }
+        
+        .navbar-toggler {
+            padding: .20rem .50rem;
+            font-size: 1.25rem;
+            line-height: 1;
+            background-color: transparent;
+            border: 1px solid white
+        }
+        
+        .botonesDistintos {
+            color: rgb(28, 48, 163) !important;
+        }
+        
+        .wrapper {
+            width: 100%;
+            position: absolute;
+            height: 100%;
+            background: linear-gradient( rgba(255, 183, 24, 0.7)100%, rgba(255, 183, 24, 0.7)100%), url("../../assets/wallpaperflare.com_wallpaper\ \(2\).jpg");
+            background: linear-gradient( rgba(255, 183, 24, 0.7)100%, rgba(255, 183, 24, 0.7)100%), url("../../assets/roque-nublo.jpg");
+            background: linear-gradient( rgba(255, 183, 24, 0.7)100%, rgba(255, 183, 24, 0.7)100%), url("../../assets/istockphoto-482952995-612x612.jpg");
+            background-position: center;
+            animation-name: changeImagen;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            /*background-color: #ffb717;*/
+            opacity: 1;
+            clip-path: polygon(85% 0, 100% 0, 100% 50%, 100% 100%, 65% 100%);
+        }
+        
+        .navbar-brand {
+            color: #fff;
+            font-family: 'Allerta Stencil', sans-serif;
+            margin-bottom: 4px;
+            font-size: 27px
+        }
+        
+        .dropdown-item {
+            border-bottom: 1px solid rgb(0, 24, 150);
+        }
+        
+        .dropdown-item:last-child {
+            border-bottom: 0;
+        }
+        
+        .nav-link:hover {
+            color: rgb(255, 183, 24) !important;
+        }
+        
+        .botonesDistintos:hover {
+            background-color: rgb(0, 0, 0) !important;
+        }
+        
+        .navbar-brand:hover {
+            color: #fff
+        }
+        
+        .navbar-red {
+            background: linear-gradient(#001896, #000);
+            color: #fff
+        }
+        
+        .all-show {
+            z-index: 10
+        }
+        
+        .logo {
+            float: left;
+        }
+        
+        #logoGranca {
+            margin: .3rem;
+            width: 4rem;
+        }
+        
+        .specialItem {
+            text-align: center;
+            width: 7rem;
+            background-color: rgb(255, 255, 255, 0.5);
+            border-radius: 0.3rem;
+            font-weight: bold;
+        }
+        
+        .dropdown-item {
+            font-weight: bold;
+            margin: .1rem 0;
+        }
+        
+        .dropdown-item:hover {
+            background-color: #001896;
+            color: white;
+        }
+        
+        @media (max-width: 1520px) {
+            .specialZone {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 1500px) {
+            .wrapper {
+                background: rgba(255, 183, 24, 1);
+            }
+        }
+        
+        @media (max-width: 1198px) {
+            .specialZone {
+                display: none;
+            }
+        }
+        
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        
+        .dropdown-menu {
+            margin-top: 0;
+        }
+        
+        #headerline {
+            height: 10vh;
+            width: 10vw;
+            background-color: black;
+        }

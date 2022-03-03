@@ -1,0 +1,398 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+                                                    Historia y Palmares
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------*/
+
+
+h2 {
+    color: #010c70;
+}
+
+.hyp h2 {
+    text-align: left;
+    color: #010c70;
+}
+
+.historia {
+    text-align: justify;
+    width: 70%;
+    margin: 0px auto;
+}
+
+.historia2 {
+    text-align: justify;
+    width: 70%;
+    margin: 0px auto;
+}
+
+.historia img {
+    height: 400px;
+    margin-bottom: 90px;
+}
+
+.slide {
+    width: 60%;
+    margin: 0px auto;
+}
+
+.no_ver {
+    display: none;
+}
+
+.timeline-date-row {
+    overflow: hidden;
+}
+
+.timeline-dates-list {
+    display: flex;
+    justify-content: space-around;
+    width: 130%;
+    height: 300px;
+    left: 200px;
+    position: relative;
+    transform: translate3d(0, 0, 0);
+    transition: all 500ms linear;
+    list-style: none;
+}
+
+.timeline-date.isActive .timeline-marker-inner {
+    background-color: #FFB718;
+}
+
+.timeline-date.isActive .timeline-marker-line:before {
+    height: 100%;
+}
+
+.timeline-date.isActive .timeline-date-content {
+    z-index: 1;
+    opacity: 1;
+    margin-top: 50px;
+    transform: scale(1);
+}
+
+@media (max-width: 1520px) {
+    .specialZone {
+        display: none;
+    }
+}
+
+@media (max-width: 1500px) {
+    .wrapper {
+        background: rgba(255, 183, 24, 1);
+    }
+}
+
+@media (max-width: 1198px) {
+    .specialZone {
+        display: none;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background: linear-gradient( rgba(255, 183, 24, 0.7)100%, rgba(255, 183, 24, 0.7)100%), url("../../assets/istockphoto-482952995-612x612.jpg");
+    background-position: center;
+    animation-name: changeImagen;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /*background-color: #ffb717;*/
+    opacity: 1;
+    clip-path: polygon(85% 0, 100% 0, 100% 50%, 100% 100%, 65% 100%);
+}
+
+.timeline-date.isActive h4 {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.timeline-date h4 {
+    opacity: 0;
+    margin-top: 33px;
+    text-align: right;
+    position: relative;
+    right: 80px;
+    font-size: 24px;
+    transform: scale(.75);
+    transition: opacity 400ms linear;
+}
+
+.timeline-date h5 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.timeline-date .timeline-marker {
+    padding: 15px;
+}
+
+.timeline-date .timeline-marker:hover {
+    cursor: pointer;
+}
+
+.timeline-date .timeline-marker-inner {
+    height: 0;
+    width: 0;
+    border-radius: 50%;
+    position: relative;
+}
+
+.timeline-date .timeline-date-content {
+    height: auto;
+    width: 200px;
+    opacity: 0;
+    transform: scale(.75);
+    transition: opacity 400ms ease;
+    position: relative;
+    z-index: -1;
+}
+
+.timeline-date .timeline-marker-line {
+    padding-left: 20px;
+    margin-left: 19px;
+    position: absolute;
+    top: 50px;
+}
+
+.timeline-date .timeline-marker-line:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 2px;
+    background-color: #FFB718;
+}
+
+.linea_tiempo {
+    width: 100%;
+}
+
+@media (max-width:900px) {
+    .historia img {
+        margin: 0px auto;
+        height: 200px;
+        margin-bottom: 80px;
+    }
+    .timeline-dates-list {
+        display: flex;
+        justify-content: space-around;
+        width: 130%;
+        height: 300px;
+        left: 500px;
+        position: relative;
+        transform: translate3d(0, 0, 0);
+        transition: all 500ms linear;
+        list-style: none;
+    }
+    .historia {
+        text-align: justify;
+        width: 90%;
+        margin: 0px auto;
+    }
+    .historia2 {
+        text-align: justify;
+        width: 99%;
+        margin: 0px auto;
+    }
+    .historia2 {
+        display: none;
+    }
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+                                                    Contacto
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------*/
+
+.lugar {
+    text-align: center;
+    width: 60%;
+    margin: 0px auto;
+    background-color: #010c70;
+    padding-top: 20px;
+    margin-bottom: 120px;
+}
+
+.lugar h3 {
+    color: #FFB718;
+    margin-bottom: 20px;
+}
+
+.lugar p {
+    color: white;
+}
+
+.lugar img {
+    width: 100%;
+    height: 400px;
+}
+
+.contactar {
+    width: 50%;
+    margin: 0px auto;
+}
+
+.contactar h2 {
+    text-align: center;
+}
+
+.punto_contactar {
+    text-align: justify;
+    width: 75%;
+    margin: 40px auto;
+}
+
+.punto_contactar h4 {
+    font-size: 23px;
+    text-align: center;
+}
+
+.preg_punto {
+    text-align: center;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    background-color: white;
+    padding: 8px;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 5px;
+}
+
+.subir_fich {
+    width: 100%;
+    background-color: white;
+    padding: 9px;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 5px;
+}
+
+.pequeñito {
+    font-size: 12px;
+    text-align: justify;
+    padding: 2px;
+}
+
+.enviar {
+    width: 60%;
+    border: 2px solid #010c70;
+    background-color: #010c70;
+    color: #FFB718;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.div_contacta {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.contacta {
+    padding: 20px;
+    width: 50%;
+    background-color: #010c70;
+    color: #FFB718;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.contacta h2 {
+    font-size: 25px;
+    color: #FFB718;
+}
+
+.contacta h2:hover {
+    font-size: 40px;
+    transition: 1s;
+}
+
+@media (max-width:900px) {
+    .lugar {
+        text-align: center;
+        width: 80%;
+        margin-bottom: 80px;
+    }
+    .lugar img {
+        width: 100%;
+        height: 200px;
+    }
+    .contactar {
+        width: 90%;
+    }
+    .contacta {
+        padding: 20px;
+        width: 90%;
+    }
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+                                            AYUDANOS , VOLUNTARIOS Y DENUNCIAS
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------*/
+
+.anc h2 {
+    text-align: center;
+}
+
+.ayudanos {
+    width: 50%;
+    margin: 0px auto 100px auto;
+}
+
+.voluntarios {
+    width: 50%;
+    margin: 0px auto 100px auto;
+}
+
+.denuncias {
+    width: 50%;
+    margin: 0px auto 100px auto;
+}
+
+.captcha {
+    font-size: 25px;
+    margin-top: 5px;
+    margin-right: 40px;
+    font-family: 'Rock Salt', cursive;
+}

@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Iconos -->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/multimedia.js"></script>
+
+    <title>ESPORTS</title>
+
+    <link rel="shortcut icon" href="../assets/logo_granca.png">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../navbar_footer/styles/styleFooter.css">
+    <link rel="stylesheet" href="../navbar_footer/styles/styleNavbar.css">
+    <link rel="stylesheet" href="styles/styleEsports.css">
+    <script src="https://kit.fontawesome.com/1f9201cd38.js" crossorigin="anonymous"></script>
+
+</head>
+
+<script src="../navbar_footer/scripts/navbarscript.js"></script>
+<script>
+    $(window).on('resize scroll', function() {
+        if (($(window).scrollTop() > 50) && (($(window).width() > 1280))) {
+            $(".navbar").css({
+                'height': "3.3rem",
+                'margin-top': "1rem"
+            });
+            $("#logoGranca").css({
+                'width': '4rem'
+            });
+            $("#logoGranca").css({
+                'display': 'inline-block'
+            });
+
+        }
+
+        if (($(window).scrollTop() < 50) && (($(window).width() > 1280))) {
+            $(".navbar").css({
+                'height': "6rem",
+                'margin-top': "0"
+            });
+            $("#logoGranca").css({
+                'display': 'inline-block'
+            });
+        };
+    });
+</script>
+
+<body>
+    <nav class="navbar navbar-expand-xl navbar-red navbar-dark navbar-fixed-top">
+        <div class="wrapper"> </div>
+        <div class="container-fluid all-show">
+            <ul class="nav navbar-nav navbar-right logo">
+                <li>
+                    <a href="../inicio/index.html"><img alt="logoGranca" src="../assets/logo_granca.png"
+                            id="logoGranca"></a>
+                </li>
+            </ul>
+            <a class="navbar-brand" href="../inicio/index.html">CB GRAN CANARIA
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-hover="dropdown" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">CLUB</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../Club/Historia_y_Palmares.html">Historia y Palmarés</a>
+                            <a class="dropdown-item" href="../Club/Contacto.html">Contacto</a>
+                            <a class="dropdown-item" href="../Club/Ayudanos.html">Ayúdanos a mejorar</a>
+
+                            <!--
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+
+                            -->
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-hover="dropdown" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">EQUIPO</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../plantilla/index.html">Plantilla</a>
+                            <a class=" dropdown-item" href="../partidos/index.html">Partidos</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-hover="dropdown" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">NOTICIAS</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../noticias/LigaEndesa.html">Liga endesa</a>
+                            <a class="dropdown-item" href="../noticias/LigaEndesa.html">Eurocup</a>
+                            <a class="dropdown-item" href="../noticias/LigaEndesa.html">Club</a>
+                            <a class="dropdown-item" href="../noticias/LigaEndesa.html">Cantera</a>
+                            <a class="dropdown-item" href="../noticias/LigaEndesa.html">ESports</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-hover="dropdown" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            href="../multimedia/multimedia.html">MULTIMEDIA</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../multimedia/multimedia.html">Multimedia</a>
+                            <a class="dropdown-item" href="../multimedia/albumes.html">Fotos</a>
+                            <a class="dropdown-item" href="../multimedia/videos.html">Vídeos</a>
+                            <a class="dropdown-item" href="../multimedia/revista_marea_amarilla.html">Revista Marea
+                                Amarilla</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-hover="dropdown" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">ABONADOS</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../Abonados/Web_app.html">Web App Oficial</a>
+                            <a class="dropdown-item" href="../Abonados/Abonate.html">Abono para la segunda vuelta</a>
+                            <a class="dropdown-item" href="https://www.youtube.com/watch?v=Dwq48yzHcEo">¿Cómo descargar
+                                tu abono digital?</a>
+                            <a class="dropdown-item" href="https://www.youtube.com/watch?v=pWgp-ag8IDw">Ceder entrada
+                                desde ordenador</a>
+                            <a class="dropdown-item" href="https://www.youtube.com/watch?v=oovjHLrWnh0">Ceder entrada
+                                desde móvil</a>
+                            <a class="dropdown-item" href="https://www.youtube.com/watch?v=O3S-kbioVt4">Cambiar
+                                asiento</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-hover="dropdown" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">GRANCA</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" data-hover="dropdown" id="navbarDropdown"
+                                href="../tienda/index.html">TIENDA</a>
+                            <a class="dropdown-item" data-hover="dropdown" id="navbarDropdown"
+                                href="https://cbgrancanaria.koobin.com/?action=PU_ident_unica&idioma=ES&act=1">PERSONAL</a>
+                            <a class="dropdown-item" data-hover="dropdown" id="navbarDropdown"
+                                href="https://app.cbgrancanaria.net/login">APP</a>
+                            <a class="dropdown-item" data-hover="dropdown" id="navbarDropdown"
+                                href="../esports/esports.html">ESPORTS</a>
+                            <a class="dropdown-item" data-hover="dropdown" id="navbarDropdown"
+                                href="https://cbgrancanaria.koobin.com/?idioma=ES">ENTRADAS</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="cabecera bg-cover text-white">
+            <div class="container py-5 text-center font-weight-bold" id="tituloCabecera">
+                <h1 class="display-4 mt-3 pt-5 titulazo">ESPORTS</h1>
+            </div>
+            <div id="filtro_superior"></div>
+        </div>
+    </header>
+    <section class="m-0">
+        <div class="text-center pb-4">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-2 col-4 mx-0">
+                    <img src="img/liveStreaming.png" alt="" class="w-75">
+                </div>
+                <div class="col-md-8 col-12 mx-0">
+                    <h2 class="mb-3 pt-3" id="titulo">¡NOS DIGITALIZAMOS!</h2>
+                </div>
+                <div class="col-md-2 col-4 mx-0">
+                    <img src="img/mando.png" alt="" class="w-75"> 
+                </div>                               
+            </div>
+            <div class="row text-start w-75 mx-auto my-3">
+                <div class="col-lg-7 col-12 d-flex align-items-center">
+                    <p class="fw-bold h4 mt-4">NOS HACEMOS A LOS MÁS JÓVENES</p>
+                    <img src="img/gamerBoy.png" alt="" class="w-25">
+                </div>
+                <div class="col-12">
+                    <p class="h5 fw-bold my-4">
+                        El Club Baloncesto Gran Canaria a través de los Esports tiene como objetivo llegar a los más jóvenes y 
+                        así estar sumergido en una de las tendencias más crecientes del momento. Y ya no solo para entretener 
+                        como equipo sino para rejuvenecer la audiencia del baloncesto y obtener otras nuevas líneas de negocio 
+                        acorde a la época que vivimos.
+                    </p>
+                </div>
+                <div class="col-12">
+                    <p class="h5 fw-bold my-4">
+                        Tras seguir durante tiempo este sector, el club prepara un proyecto de formación, engagement y competitivo 
+                        de esports utilizando la experiencia adquirida en el Baloncesto profesional y siendo pioneros en la ACB con 
+                        el juego de NBA2K.
+                    </p>
+                </div>
+            </div>
+            <img src="img/nba2k22.png" alt="" class="d-block mx-0 w-100 my-3">
+            <div class="w-75 mx-auto d-flex justify-content-center align-items-center">
+                <h2 class="fw-bold">TRES PATAS FUNDAMENTALES</h2>
+                <img src="img/jugador.png" alt="" class="w-25">
+            </div>
+            
+            <div class="w-80 mx-auto row d-flex justify-content-around">
+                <div class="valores col-lg-3 col-sm-5 col-10 mx-2 my-3 py-3 px-2 text-light d-flex align-items-center">
+                    <div>
+                        <img src="img/formacion.png" alt="" class="">
+                        <h3 class="h4">Formación y valores</h3>
+                        <p>Utilizando las nuevas tecnologías para fomentar los valores del Baloncesto en los jóvenes.</p>
+                    </div>
+                </div>
+                <div class="valores col-lg-3 col-sm-5 col-10 mx-2 my-3 py-3 px-2 text-light d-flex align-items-center">
+                    <div>
+                        <img src="img/engagement.png" alt="" class="">
+                        <h3 class="h4">Engagement</h3>
+                        <p>
+                            Creando contenido digital y acciones que permita al club diversificar sus fuentes de ingresos y además 
+                            acercar productos a los más jóvenes con otros tipos de gustos a los convencionales.
+                        </p>
+                    </div>
+                </div>
+                <div class="valores col-lg-3 col-sm-5 col-10 mx-2 my-3 pt-3 pb-5 px-4 text-light d-flex align-items-center">
+                    <div>
+                        <img src="img/competicion.png" alt="" class="">
+                        <h3 class="h4">Competición</h3>
+                        <p>
+                            Participando en todos los torneos nacionales e internacionales de NBA2K en todas las variantes que tiene 
+                            el juego y creando torneos regionales y nacionales para realizar la acción de scouting, todo ello con la 
+                            colaboración de Galaxy Gaming Center.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3 w-50 mx-auto text-start">
+                <h2 class="text-light mb-4">¡SUSCRIBETE A NUESTRA NEWSLETTER...</h2>
+                <div>
+                    <label for="email" class="form-label text-light">Dirección Email</label>
+                    <div class="row d-flex justify-content-between align-items-center">
+                        <div class="col-md-8 col-12">
+                            <input type="email" name="email" id="email" class="form-control d-inline w-100 my-3">
+                        </div>
+                        <div class="col-md-3 col-12">
+                            <button class="btn btn-light mt-0 w-100">Enviar</button>
+                        </div>
+                    </div>                    
+                </div>
+                <h2 class="text-light my-4">... Y NUESTRAS REDES SOCIALES ESPECIALIZADAS!</h2>
+                <div class="row text-center">
+                    <div class="col-md-4 col-10 my-3">
+                        <a href="https://www.twitch.tv/esportsgranca" target="_blank"><img src="img/twitch.png" alt="" class="w-25"></a> 
+                    </div>
+                    <div class="col-md-4 col-10 my-3">
+                        <a href="https://twitter.com/eSportsGranca" target="_blank"><img src="img/twitter.png" alt="" class="w-25"></a> 
+                    </div>
+                    <div class="col-md-4 col-10 my-3">
+                        <a href="https://www.youtube.com/playlist?list=PLOtDT3VViglBZ7OLjIAxO3zDGPMb2quAK" target="_blank"><img src="img/youtube.png" alt="" class="w-25"></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-04">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-2 mb-md-0 mb-2">
+                    <img src="../assets/logo_granca.png" width="100px">
+                </div>
+                <div class=" borrar col-md-6 col-lg-3 mb-md-0 mb-2 text-center">
+                    <ul class="list-unstyled izq">
+                        <li><a href="#" class="py-1 d-block">LOCALIZACIÓN</a></li>
+                        <li><a href="#" class="py-1 d-block">CLUB</a></li>
+                        <li><a href="#" class="py-1 d-block">NOTICIAS</a></li>
+
+                    </ul>
+                    <ul class="list-unstyled der">
+                        <li><a href="#" class="py-1 d-block">TIENDA</a></li>
+                        <li><a href="#" class="py-1 d-block">ENTRADAS</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6  col-lg-2 mb-md-3 mb-2">
+                    <img src="../assets/logo_liga_endesa_blanco.png" width="150px">
+                </div>
+                <div class="col-md-6 col-lg-5 mb-md-3 mb-2">
+                    <div class="iconos">
+                        <img src="../assets/Twitter-logo.png">
+                        <img src="../assets/ytb-logo.png">
+                        <img src="../assets/Facebook_logo.png">
+                        <img src="../assets/tiktok_logo.png">
+                        <img src="../assets/instagram_logo.png">
+                        <img src="../assets/Whatsapp_logo.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-100 mt-2 border-top py-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6">
+
+                        <p class="copyright">
+                            © Club Baloncesto Gran Canaria
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-6 text-md-right">
+                        <p class=" list-unstyled">
+                            Política de privacidad - Protección de datos - Política de cookies
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    jQuery(document).ready(function($) {
+        $(document).ready(function() {
+            $('.mi-selector').select2();
+        });
+    });
+</script>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js'></script>
+<script type='text/javascript' src=''></script>
+<script type='text/javascript' src=''></script>
+<script type='text/Javascript'></script>
+
+
+</html>

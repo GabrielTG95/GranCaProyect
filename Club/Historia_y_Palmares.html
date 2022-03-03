@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/6fd4f7a664.js" crossorigin="anonymous"></script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Hello, world!</title>
+
+    <link rel="shortcut icon" href="../assets/logo_granca.png">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../navbar_footer/styles/styleFooter.css">
+    <link rel="stylesheet" href="../navbar_footer/styles/styleNavbar.css">
+    <link rel="stylesheet" href="styles/styleClub.css">
+
+</head>
+
+<script src="../navbar_footer/scripts/navbarscript.js"></script>
+<script>
+    $(window).on('resize scroll', function() {
+        if (($(window).scrollTop() > 50) && (($(window).width() > 1280))) {
+            $(".navbar").css({
+                'height': "3.3rem",
+                'margin-top': "1rem"
+            });
+            $("#logoGranca").css({
+                'width': '4rem'
+            });
+            $("#logoGranca").css({
+                'display': 'inline-block'
+            });
+
+        }
+
+        if (($(window).scrollTop() < 50) && (($(window).width() > 1280))) {
+            $(".navbar").css({
+                'height': "6rem",
+                'margin-top': "0"
+            });
+            $("#logoGranca").css({
+                'display': 'inline-block'
+            });
+        };
+    });
+</script>
+
+<body onload="interval()">
+    <nav class="navbar navbar-expand-xl navbar-red navbar-dark navbar-fixed-top">
+        <div class="wrapper"> </div>
+        <div class="container-fluid all-show">
+            <ul class="nav navbar-nav navbar-right logo">
+                <li>
+                    <a href="../inicio/index.html"><img alt="logoGranca" src="../assets/logo_granca.png"
+                            id="logoGranca"></a>
+                </li>
+            </ul>
+            <a class="navbar-brand" href="../inicio/index.html">CB GRAN CANARIA
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-hover="dropdown" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">CLUB</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../Club/Historia_y_Palmares.html">Historia y Palmarés</a>
+                            <a class="dropdown-item" href="../Club/Contacto.html">Contacto</a>
+                            <a class="dropdown-item" href="../Club/Ayudanos.html">Ayúdanos a mejorar</a>
+
+                            <!--
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+
+                            -->
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-hover="dropdown" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">EQUIPO</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../plantilla/index.html">Plantilla</a>
+                            <a class=" dropdown-item" href="../partidos/index.html">Partidos</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-hover="dropdown" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">NOTICIAS</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../noticias/LigaEndesa.html">Liga endesa</a>
+                            <a class="dropdown-item" href="../noticias/LigaEndesa.html">Eurocup</a>
+                            <a class="dropdown-item" href="../noticias/LigaEndesa.html">Club</a>
+                            <a class="dropdown-item" href="../noticias/LigaEndesa.html">Cantera</a>
+                            <a class="dropdown-item" href="../noticias/LigaEndesa.html">ESports</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-hover="dropdown" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            href="../multimedia/multimedia.html">MULTIMEDIA</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../multimedia/multimedia.html">Multimedia</a>
+                            <a class="dropdown-item" href="../multimedia/albumes.html">Fotos</a>
+                            <a class="dropdown-item" href="../multimedia/videos.html">Vídeos</a>
+                            <a class="dropdown-item" href="../multimedia/revista_marea_amarilla.html">Revista Marea
+                                Amarilla</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-hover="dropdown" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">ABONADOS</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../Abonados/Web_app.html">Web App Oficial</a>
+                            <a class="dropdown-item" href="../Abonados/Abonate.html">Abono para la segunda vuelta</a>
+                            <a class="dropdown-item" href="https://www.youtube.com/watch?v=Dwq48yzHcEo">¿Cómo descargar
+                                tu abono digital?</a>
+                            <a class="dropdown-item" href="https://www.youtube.com/watch?v=pWgp-ag8IDw">Ceder entrada
+                                desde ordenador</a>
+                            <a class="dropdown-item" href="https://www.youtube.com/watch?v=oovjHLrWnh0">Ceder entrada
+                                desde móvil</a>
+                            <a class="dropdown-item" href="https://www.youtube.com/watch?v=O3S-kbioVt4">Cambiar
+                                asiento</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-hover="dropdown" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">GRANCA</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" data-hover="dropdown" id="navbarDropdown"
+                                href="../tienda/index.html">TIENDA</a>
+                            <a class="dropdown-item" data-hover="dropdown" id="navbarDropdown"
+                                href="https://cbgrancanaria.koobin.com/?action=PU_ident_unica&idioma=ES&act=1">PERSONAL</a>
+                            <a class="dropdown-item" data-hover="dropdown" id="navbarDropdown"
+                                href="https://app.cbgrancanaria.net/login">APP</a>
+                            <a class="dropdown-item" data-hover="dropdown" id="navbarDropdown"
+                                href="../esports/esports.html">ESPORTS</a>
+                            <a class="dropdown-item" data-hover="dropdown" id="navbarDropdown"
+                                href="https://cbgrancanaria.koobin.com/?idioma=ES">ENTRADAS</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="cabecera bg-cover text-white">
+            <div class="miContenedor container py-5 text-center">
+                <h1 class="display-4 font-weight-bold titulazo">Historia  y  Palmarés</h1>
+            </div>
+        </div>
+    </header>
+    <section>
+
+        <div class="mt-4 hyp">
+            <div class="historia">
+                <h2>HISTORIA DEL CLUB BALONCESTO GRAN CANARIA</h2>
+                El C.B. Gran Canaria nació en el año 1963 dentro del Colegio Claret y durante muchos años jugó con el nombre de dicha entidad. Tras los buenos resultados en las competiciones escolares, se decidió federar al equipo que pasó a integrarse en la Segunda
+                División.
+                <br/><br/> Hasta el año 1984 milita en esa categoría y es ese mismo año cuando se decide a confeccionar unos estatutos propios para tener personalidad jurídica independiente. Dichos estatutos son aprobados el 22 de Mayo de 1985 por lo
+                que el equipo pasa a denominarse Claret Club de Baloncesto.<br /><br /> En la temporada 84-85 se logra el ascenso a la Liga ACB, categoría que no puede conservar bajando de nuevo a la Primera B. Club a caballo entre las dos categorías
+                asciende de nuevo a la Liga ACB en la temporada 87-88, pasando en la temporada siguiente a denominarse C.B. Gran Canaria en un intento de reivindicar al Club como exponente de donde asienta su masa social. Tras dos temporadas en la Liga
+                ACB, desciende a la Primera B para recuperar de nuevo su plaza en la máxima categoría en la temporada 91/92.
+                <br /><br /> Por exigencias del Consejo Superior de Deportes, se hace de obligado cumplimiento la transformación del Club en Sociedad Anónima Deportiva, la cual se constituye el 30 de Junio de 1992 después de un apoyo incondicional por
+                parte de las instituciones locales (Cabildo, Ayuntamiento,…) y el accionariado privado. Después de varias temporadas en la categoría de plata del baloncesto español (Primera División y Liga EBA), en la temporada 1994-1995, el Gran Canaria
+                logra el campeonato de la Liga EBA y el ascenso por cuarta vez a la Liga ACB. Desde entonces ha militado en la máxima categoría del Baloncesto español de forma ininterrumpida.<br /><br /> En la temporada 2012-13, el Club Baloncesto Gran
+                Canaria dio un paso histórico al acceder a semifinales de la Copa del Rey y Liga Endesa por primera vez en su historia. En la competición del KO, la entidad claretiana derrotó a Bilbao Basket; mientras que en los cuartos de final del Playoff
+                de la Liga Endesa tumbó al Laboral Kutxa, que había acabado la temporada como segundo de la fase regular. El siguiente curso, el equipo isleño logró el récord de triunfos en la competición doméstica con 22 victorias. En la temporada 2014-15,
+                los grancanarios fueron un paso más allá y consiguieron llegar a la final de la Eurocup tras batir récords históricos por el camino, incluido el de más victorias en el torneo. Tras caer ante el Khimki, el Club Baloncesto Gran Canaria se
+                hizo con la primera medalla profesional intercontinental de su historia.<br /><br /> El camino ascendente del club claretiano quedó ratificado con una campaña 2015/16 para el recuerdo. Los amarillos, de la mano de Aíto García Reneses,
+                llegaron a la final de la Copa del Rey por primera vez en su historia y cayeron por 81-85 ante el Real Madrid en un partido muy disputado. En Europa, el curso fue exitoso al alcanzar por segundo año consecutivo las semifinales de la Eurocup.<br/><br/>                A comienzos del curso 2016-17, el Herbalife Gran Canaria levantó el primer título de su historia al derrotar por 79-59 al FC Barcelona Lassa en la final de la Supercopa Endesa celebrada en Vitoria.
+                <br /><br />
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators no_ver">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../assets/Club/1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Club/2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Club/3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Club/4.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Club/5.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Club/6.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Club/7.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Club/8.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Club/9.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Club/10.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Club/11.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Club/12.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="historia2">
+                <h2 class="mb-3">TRAYECTORIA DEPORTIVA</h2>
+                <div class="linea_tiempo">
+                    <div class="timeline-date-row">
+                        <div class="timeline-date-row-inner">
+                            <ul class="timeline-dates-list">
+                                <li class="timeline-date timeline-date-2">
+                                    <div class="timeline-marker">
+                                        <div class="timeline-marker-inner">1963</div>
+                                    </div>
+                                    <h4>LIGA</h4>
+                                    <div class="timeline-marker-line">
+                                        <div class="timeline-date-content">
+                                            <p>Segunda División. Colegio Claret. 7º.</p>
+                                            <img src="http://placehold.it/150" alt="" />
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-date timeline-date-2">
+                                    <div class="timeline-marker">
+                                        <div class="timeline-marker-inner">1964</div>
+                                    </div>
+                                    <h4>LIGA</h4>
+                                    <div class="timeline-marker-line">
+                                        <div class="timeline-date-content">
+                                            <p>Segunda División. Colegio Claret. 9º.</p>
+                                            <img src="http://placehold.it/150" alt="" />
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-date timeline-date-2">
+                                    <div class="timeline-marker">
+                                        <div class="timeline-marker-inner">1965</div>
+                                    </div>
+                                    <h4>LIGA</h4>
+                                    <div class="timeline-marker-line">
+                                        <div class="timeline-date-content">
+                                            <p>Segunda División. Colegio Claret. 7º.</p>
+                                            <img src="http://placehold.it/150" alt="" />
+                                        </div>
+                                    </div>
+                                    <li class="timeline-date timeline-date-2">
+                                        <div class="timeline-marker">
+                                            <div class="timeline-marker-inner">1968</div>
+                                        </div>
+                                        <h4>LIGA</h4>
+                                        <div class="timeline-marker-line">
+                                            <div class="timeline-date-content">
+                                                <p>Segunda División. Colegio Claret. 7º.</p>
+                                                <img src="http://placehold.it/150" alt="" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-date timeline-date-2">
+                                        <div class="timeline-marker">
+                                            <div class="timeline-marker-inner">1969</div>
+                                        </div>
+                                        <h4>LIGA</h4>
+                                        <div class="timeline-marker-line">
+                                            <div class="timeline-date-content">
+
+                                                <p>Segunda División. Colegio Claret. 7º.</p>
+                                                <img src="http://placehold.it/150" alt="" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-date timeline-date-2">
+                                        <div class="timeline-marker">
+                                            <div class="timeline-marker-inner">1970</div>
+                                        </div>
+                                        <h4>LIGA</h4>
+                                        <div class="timeline-marker-line">
+                                            <div class="timeline-date-content">
+
+                                                <p>Segunda División. Colegio Claret. 7º.</p>
+                                                <img src="http://placehold.it/150" alt="" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-date timeline-date-2">
+                                        <div class="timeline-marker">
+                                            <div class="timeline-marker-inner">1971</div>
+                                        </div>
+                                        <h4>LIGA</h4>
+                                        <div class="timeline-marker-line">
+                                            <div class="timeline-date-content">
+
+                                                <p>Segunda División. Colegio Claret. 7º.</p>
+                                                <img src="http://placehold.it/150" alt="" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-date timeline-date-2">
+                                        <div class="timeline-marker">
+                                            <div class="timeline-marker-inner">1972</div>
+                                        </div>
+                                        <h4>LIGA</h4>
+                                        <div class="timeline-marker-line">
+                                            <div class="timeline-date-content">
+
+                                                <p>Segunda División. Colegio Claret. 7º.</p>
+                                                <img src="http://placehold.it/150" alt="" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-date timeline-date-2">
+                                        <div class="timeline-marker">
+                                            <div class="timeline-marker-inner">1973</div>
+                                        </div>
+                                        <h4>LIGA</h4>
+                                        <div class="timeline-marker-line">
+                                            <div class="timeline-date-content">
+
+                                                <p>Segunda División. Colegio Claret. 7º.</p>
+                                                <img src="http://placehold.it/150" alt="" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-date timeline-date-2">
+                                        <div class="timeline-marker">
+                                            <div class="timeline-marker-inner">1974</div>
+                                        </div>
+                                        <h4>LIGA</h4>
+                                        <div class="timeline-marker-line">
+                                            <div class="timeline-date-content">
+
+                                                <p>Segunda División. Colegio Claret. 7º.</p>
+                                                <img src="http://placehold.it/150" alt="" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-date timeline-date-2">
+                                        <div class="timeline-marker">
+                                            <div class="timeline-marker-inner">1975</div>
+                                        </div>
+                                        <h4>LIGA</h4>
+                                        <div class="timeline-marker-line">
+                                            <div class="timeline-date-content">
+
+                                                <p>Segunda División. Colegio Claret. 7º.</p>
+                                                <img src="http://placehold.it/150" alt="" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-date timeline-date-2">
+                                        <div class="timeline-marker">
+                                            <div class="timeline-marker-inner">1976</div>
+                                        </div>
+                                        <h4>LIGA</h4>
+                                        <div class="timeline-marker-line">
+                                            <div class="timeline-date-content">
+
+                                                <p>Segunda División. Colegio Claret. 7º.</p>
+                                                <img src="http://placehold.it/150" alt="" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-date timeline-date-2">
+                                        <div class="timeline-marker">
+                                            <div class="timeline-marker-inner">1977</div>
+                                        </div>
+                                        <h4>LIGA</h4>
+                                        <div class="timeline-marker-line">
+                                            <div class="timeline-date-content">
+
+                                                <p>Segunda División. Colegio Claret. 7º.</p>
+                                                <img src="http://placehold.it/150" alt="" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-date timeline-date-2">
+                                        <div class="timeline-marker">
+                                            <div class="timeline-marker-inner">1978</div>
+                                        </div>
+                                        <h4>LIGA</h4>
+                                        <div class="timeline-marker-line">
+                                            <div class="timeline-date-content">
+
+                                                <p>Segunda División. Colegio Claret. 7º.</p>
+                                                <img src="http://placehold.it/150" alt="" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-date timeline-date-2">
+                                        <div class="timeline-marker">
+                                            <div class="timeline-marker-inner">1979</div>
+                                        </div>
+                                        <h4>LIGA</h4>
+                                        <div class="timeline-marker-line">
+                                            <div class="timeline-date-content">
+
+                                                <p>Segunda División. Colegio Claret. 7º.</p>
+                                                <img src="http://placehold.it/150" alt="" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-date timeline-date-2">
+                                        <div class="timeline-marker">
+                                            <div class="timeline-marker-inner">1980</div>
+                                        </div>
+                                        <h4>LIGA</h4>
+                                        <div class="timeline-marker-line">
+                                            <div class="timeline-date-content">
+
+                                                <p>Segunda División. Colegio Claret. 7º.</p>
+                                                <img src="http://placehold.it/150" alt="" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-date timeline-date-2">
+                                        <div class="timeline-marker">
+                                            <div class="timeline-marker-inner">1981</div>
+                                        </div>
+                                        <h4>LIGA</h4>
+                                        <div class="timeline-marker-line">
+                                            <div class="timeline-date-content">
+
+                                                <p>Segunda División. Colegio Claret. 7º.</p>
+                                                <img src="http://placehold.it/150" alt="" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-date timeline-date-2">
+                                        <div class="timeline-marker">
+                                            <div class="timeline-marker-inner">1982</div>
+                                        </div>
+                                        <h4>LIGA</h4>
+                                        <div class="timeline-marker-line">
+                                            <div class="timeline-date-content">
+
+                                                <p>Segunda División. Colegio Claret. 7º.</p>
+                                                <img src="http://placehold.it/150" alt="" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-date timeline-date-2">
+                                        <div class="timeline-marker">
+                                            <div class="timeline-marker-inner">1983</div>
+                                        </div>
+                                        <h4>LIGA</h4>
+                                        <div class="timeline-marker-line">
+                                            <div class="timeline-date-content">
+
+                                                <p>Segunda División. Colegio Claret. 7º.</p>
+                                                <img src="http://placehold.it/150" alt="" />.linea_tiempo { width: 100%; }
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-date timeline-date-2">
+                                        <div class="timeline-marker">
+                                            <div class="timeline-marker-inner">1984</div>
+                                        </div>
+                                        <h4>LIGA</h4>
+                                        <div class="timeline-marker-line">
+                                            <div class="timeline-date-content">
+
+                                                <p>Segunda División. Colegio Claret. 7º.</p>
+                                                <img src="http://placehold.it/150" alt="" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-date timeline-date-2">
+                                        <div class="timeline-marker">
+                                            <div class="timeline-marker-inner">1985</div>
+                                        </div>
+                                        <h4>LIGA</h4>
+                                        <div class="timeline-marker-line">
+                                            <div class="timeline-date-content">
+
+                                                <p>Segunda División. Colegio Claret. 7º.</p>
+                                                <img src="http://placehold.it/150" alt="" />
+                                            </div>
+                                        </div>
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <footer class="footer-04 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-2 mb-md-0 mb-2">
+                    <img src="../assets/logo_granca.png" width="100px">
+                </div>
+                <div class=" borrar col-md-6 col-lg-3 mb-md-0 mb-2 text-center">
+                    <ul class="list-unstyled izq">
+                        <li><a href="#" class="py-1 d-block">LOCALIZACIÓN</a></li>
+                        <li><a href="#" class="py-1 d-block">CLUB</a></li>
+                        <li><a href="#" class="py-1 d-block">NOTICIAS</a></li>
+
+                    </ul>
+                    <ul class="list-unstyled der">
+                        <li><a href="#" class="py-1 d-block">TIENDA</a></li>
+                        <li><a href="#" class="py-1 d-block">ENTRADAS</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6  col-lg-2 mb-md-3 mb-2">
+                    <img src="../assets/logo_liga_endesa_blanco.png" width="150px">
+                </div>
+                <div class="col-md-6 col-lg-5 mb-md-3 mb-2">
+                    <div class="iconos">
+                        <img src="../assets/Twitter-logo.png">
+                        <img src="../assets/ytb-logo.png">
+                        <img src="../assets/Facebook_logo.png">
+                        <img src="../assets/tiktok_logo.png">
+                        <img src="../assets/instagram_logo.png">
+                        <img src="../assets/Whatsapp_logo.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-100 mt-2 border-top py-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6">
+                        <p class="copyright">
+                            © Club Baloncesto Gran Canaria
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-6 text-md-right">
+                        <p class=" list-unstyled">
+                            Política de privacidad - Protección de datos - Política de cookies
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    jQuery(document).ready(function($) {
+        $(document).ready(function() {
+            $('.mi-selector').select2();
+        });
+    });
+    var index = 0;
+
+    $('.timeline-date').each(function() {
+        $(this).width;
+    });
+
+    dateSwitcher = setInterval(function() {
+        var $cur = $('.timeline-dates-list').find('.isActive').removeClass('isActive');
+        var $next;
+
+        if ($cur.next().length) { // we haven't reached the end of the list
+            $next = $cur.next();
+            ++index;
+        } else { //we are at the end of the list
+            $next = $('.timeline-dates-list').children().eq(0);
+            index = 0;
+        }
+        $next.addClass('isActive');
+
+        var offsetCalc = $next.index() * -40;
+        $('.timeline-dates-list').css({
+            transform: 'translate3d(' + offsetCalc + 'px, 0, 0)'
+        });
+    }, 5000);
+
+    // stops the auto movement
+    $('.timeline-date').click(function() {
+        clearInterval(dateSwitcher);
+        $('.timeline-date').removeClass('isActive');
+        $(this).addClass('isActive');
+
+        var offsetCalc = $(this).index() * -40;
+        $('.timeline-dates-list').css({
+            transform: 'translate3d(' + offsetCalc + 'px, 0, 0)'
+        });
+    });
+</script>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js'></script>
+<script type='text/javascript' src=''></script>
+<script type='text/javascript' src=''></script>
+<script type='text/Javascript'></script>
+<script src="script.js"></script>
+
+
+
+</html>

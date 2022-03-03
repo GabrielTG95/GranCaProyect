@@ -1,0 +1,239 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.menu_noticias {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background: linear-gradient( rgba(255, 183, 24, 0.7)100%, rgba(255, 183, 24, 0.7)100%), url("../../assets/wallpaperflare.com_wallpaper\ \(2\).jpg");
+    background-position: center;
+    animation-name: changeImagen;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /*background-color: #ffb717;*/
+    opacity: 1;
+    clip-path: polygon(85% 0, 100% 0, 100% 50%, 100% 100%, 65% 100%);
+}
+
+@media (max-width: 1520px) {
+    .specialZone {
+        display: none;
+    }
+}
+
+@media (max-width: 1500px) {
+    .wrapper {
+        background: rgba(255, 183, 24, 1);
+    }
+}
+
+@media (max-width: 1198px) {
+    .specialZone {
+        display: none;
+    }
+}
+
+.años {
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+
+.mi-selector {
+    width: 75%;
+}
+
+.meses {
+    margin-left: 20%;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.meses p {
+    font-size: 24px;
+}
+
+.sub_meses {
+    height: 4px;
+    margin-left: 20%;
+    width: 60%;
+    background-color: #FFB718;
+    margin-bottom: 30px;
+}
+
+.buscar {
+    width: 20%;
+    float: right;
+    border: 0px solid black;
+}
+
+.noticias {
+    width: 60%;
+    margin: 0px auto;
+}
+
+.noticia {
+    margin-bottom: 150px;
+    padding: 30px 0px;
+    background-color: #f7ff8a2c;
+    box-shadow: 7px 7px 5px 5px #0000002c;
+}
+
+.noticia h3 {
+    text-align: center;
+    color: rgb(1, 1, 165);
+}
+
+.noticia p {
+    padding: 0px 30px;
+}
+
+.noticia img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.opciones_noticia {
+    width: 100%;
+}
+
+.compartir {
+    width: 30%;
+    float: left;
+    display: flex;
+    justify-content: space-around;
+}
+
+.compartir img {
+    width: 50px;
+    height: 40px;
+    margin: 0px
+}
+
+.etiquetas {
+    padding: 0px 10px;
+    margin-left: 30%;
+    width: 40%;
+}
+
+.etiquetas span {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dentro_etiquetas {
+    display: flex;
+    justify-content: center;
+}
+
+.etiqueta {
+    background-color: #010c70;
+    color: #FFB718;
+    padding: 8px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.fecha {
+    text-align: center;
+    width: 30%;
+    float: right;
+    font-size: 20px;
+}
+
+@media (max-width:900px) {
+    .años {
+        width: 40%;
+        float: left;
+        text-align: center;
+    }
+    .meses {
+        margin-left: 0%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .meses p {
+        font-size: 17px;
+    }
+    .sub_meses {
+        height: 4px;
+        margin-left: 0%;
+        width: 100%;
+        background-color: #FFB718;
+        margin-bottom: 30px;
+    }
+    .buscar {
+        width: 50%;
+        float: left;
+        border: 0px solid black;
+    }
+    .buscador {
+        padding: 1px 3px;
+        margin: 0% auto;
+        border: 1px solid black;
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    .buscador input {
+        padding: 3px;
+        width: 90%;
+        border: 0px solid;
+    }
+    .noticias {
+        width: 80%;
+        margin: 0px auto;
+    }
+    .noticia {
+        margin-bottom: 85px;
+    }
+    .compartir {
+        position: relative;
+        width: 50%;
+        float: left;
+        display: flex;
+        justify-content: space-around;
+    }
+    .compartir img {
+        width: 50px;
+        height: 40px;
+        margin: 0px
+    }
+    .etiquetas {
+        position: relative;
+        border: 1px solid rgb(238, 238, 238);
+        padding: 0px 10px;
+        margin-left: 0%;
+        width: 100%;
+    }
+    .etiquetas span {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .dentro_etiquetas {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    .etiqueta {
+        padding: 5px;
+        font-weight: bold;
+    }
+    .fecha {
+        height: 44px;
+        text-align: center;
+        width: 50%;
+        float: left;
+        font-size: 20px;
+    }
+}

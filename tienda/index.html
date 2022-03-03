@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/6fd4f7a664.js" crossorigin="anonymous"></script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Hello, world!</title>
+
+    <link rel="shortcut icon" href="../assets/logo_granca.png">
+
+    <link rel="stylesheet" href="../navbar_footer/styles/styleFooter.css">
+    <link rel="stylesheet" href="../navbar_footer/styles/styleNavbar.css">
+    <link rel="stylesheet" href="styles/styleTienda.css">
+    <script src="script.js"></script>
+
+</head>
+
+<script src="../navbar_footer/scripts/navbarscript.js"></script>
+<script>
+    $(window).on('resize scroll', function() {
+        if (($(window).scrollTop() > 50) && (($(window).width() > 1280))) {
+            $(".navbar").css({
+                'height': "3.3rem",
+                'margin-top': "1rem"
+            });
+            $("#logoGranca").css({
+                'width': '4rem'
+            });
+            $("#logoGranca").css({
+                'display': 'inline-block'
+            });
+
+        }
+
+        if (($(window).scrollTop() < 50) && (($(window).width() > 1280))) {
+            $(".navbar").css({
+                'height': "6rem",
+                'margin-top': "0"
+            });
+            $("#logoGranca").css({
+                'display': 'inline-block'
+            });
+        };
+    });
+</script>
+
+<body>
+    <nav class="navbar navbar-expand-xl navbar-red navbar-dark navbar-fixed-top">
+        <div class="wrapper"> </div>
+        <div class="container-fluid all-show">
+            <ul class="nav navbar-nav navbar-right logo">
+                <li>
+                    <a href="../inicio/index.html"><img alt="logoGranca" src="../assets/logo_granca.png"
+                            id="logoGranca"></a>
+                </li>
+            </ul>
+            <a class="navbar-brand" href="../inicio/index.html">CB GRAN CANARIA
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-hover="dropdown" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">CLUB</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../Club/Historia_y_Palmares.html">Historia y Palmarés</a>
+                            <a class="dropdown-item" href="../Club/Contacto.html">Contacto</a>
+                            <a class="dropdown-item" href="../Club/Ayudanos.html">Ayúdanos a mejorar</a>
+
+                            <!--
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+
+                            -->
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-hover="dropdown" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">EQUIPO</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../plantilla/index.html">Plantilla</a>
+                            <a class=" dropdown-item" href="../partidos/index.html">Partidos</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-hover="dropdown" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">NOTICIAS</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../noticias/LigaEndesa.html">Liga endesa</a>
+                            <a class="dropdown-item" href="../noticias/LigaEndesa.html">Eurocup</a>
+                            <a class="dropdown-item" href="../noticias/LigaEndesa.html">Club</a>
+                            <a class="dropdown-item" href="../noticias/LigaEndesa.html">Cantera</a>
+                            <a class="dropdown-item" href="../noticias/LigaEndesa.html">ESports</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-hover="dropdown" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            href="../multimedia/multimedia.html">MULTIMEDIA</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../multimedia/multimedia.html">Multimedia</a>
+                            <a class="dropdown-item" href="../multimedia/albumes.html">Fotos</a>
+                            <a class="dropdown-item" href="../multimedia/videos.html">Vídeos</a>
+                            <a class="dropdown-item" href="../multimedia/revista_marea_amarilla.html">Revista Marea
+                                Amarilla</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-hover="dropdown" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">ABONADOS</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../Abonados/Web_app.html">Web App Oficial</a>
+                            <a class="dropdown-item" href="../Abonados/Abonate.html">Abono para la segunda vuelta</a>
+                            <a class="dropdown-item" href="https://www.youtube.com/watch?v=Dwq48yzHcEo">¿Cómo descargar
+                                tu abono digital?</a>
+                            <a class="dropdown-item" href="https://www.youtube.com/watch?v=pWgp-ag8IDw">Ceder entrada
+                                desde ordenador</a>
+                            <a class="dropdown-item" href="https://www.youtube.com/watch?v=oovjHLrWnh0">Ceder entrada
+                                desde móvil</a>
+                            <a class="dropdown-item" href="https://www.youtube.com/watch?v=O3S-kbioVt4">Cambiar
+                                asiento</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-hover="dropdown" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">GRANCA</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" data-hover="dropdown" id="navbarDropdown"
+                                href="../tienda/index.html">TIENDA</a>
+                            <a class="dropdown-item" data-hover="dropdown" id="navbarDropdown"
+                                href="https://cbgrancanaria.koobin.com/?action=PU_ident_unica&idioma=ES&act=1">PERSONAL</a>
+                            <a class="dropdown-item" data-hover="dropdown" id="navbarDropdown"
+                                href="https://app.cbgrancanaria.net/login">APP</a>
+                            <a class="dropdown-item" data-hover="dropdown" id="navbarDropdown"
+                                href="../esports/esports.html">ESPORTS</a>
+                            <a class="dropdown-item" data-hover="dropdown" id="navbarDropdown"
+                                href="https://cbgrancanaria.koobin.com/?idioma=ES">ENTRADAS</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <img src="../assets/Club_Baloncesto_Gran_Canaria-Equipo_Liga_Endesa-Temporada_2021-2022 1.png" class="imagenPlantilla">
+    <h2>CAMISETAS GRANCA</h2>
+    <section>
+        <div class="card">
+            <div class="imgBox">
+                <img src="../assets/camiseta-liga-endesa-gran-canaria-1-2021 1.png" alt="mouse corsair" class="mouse">
+            </div>
+
+            <div class="contentBox">
+                <h3>Camisa de la selección</h3>
+                <h2 class="price">4.<small>99</small> €</h2>
+                <a href="#" class="buy">COMPRAR</a>
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="../assets/camiseta-liga-endesa-gran-canaria-1-2021 1.png" alt="mouse corsair" class="mouse">
+            </div>
+
+            <div class="contentBox">
+                <h3>Camisa de la selección</h3>
+                <h2 class="price">4.<small>99</small> €</h2>
+                <a href="#" class="buy">COMPRAR</a>
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="../assets/camiseta-liga-endesa-gran-canaria-1-2021 1.png" alt="mouse corsair" class="mouse">
+            </div>
+
+            <div class="contentBox">
+                <h3>Camisa de la selección</h3>
+                <h2 class="price">4.<small>99</small> €</h2>
+                <a href="#" class="buy">COMPRAR</a>
+            </div>
+
+        </div>
+        <div class="card">
+
+            <div class="imgBox">
+                <img src="../assets/camiseta-liga-endesa-gran-canaria-1-2021 1.png" alt="mouse corsair" class="mouse">
+            </div>
+
+            <div class="contentBox">
+                <h3>Camisa de la selección</h3>
+                <h2 class="price">4.<small>99</small> €</h2>
+                <a href="#" class="buy">COMPRAR</a>
+            </div>
+
+        </div>
+    </section>
+    <hr class="lineaSeparadora">
+    <h2>MERCHANDAISING</h2>
+    <section>
+        <div class="card">
+
+            <div class="imgBox">
+                <img src="../assets/balon-de-baloncesto-spalding-marble-all-conference-orange-blue-sz7 1.png" alt="mouse corsair" class="mouse">
+            </div>
+
+            <div class="contentBox">
+                <h3>Camisa de la selección</h3>
+                <h2 class="price">4.<small>99</small> €</h2>
+                <a href="#" class="buy">COMPRAR</a>
+            </div>
+
+        </div>
+        <div class="card">
+
+            <div class="imgBox">
+                <img src="../assets/5856a4f24f6ae202fedf2760 1.png" alt="mouse corsair" class="mouse">
+            </div>
+
+            <div class="contentBox">
+                <h3>Camisa de la selección</h3>
+                <h2 class="price">4.<small>99</small> €</h2>
+                <a href="#" class="buy">COMPRAR</a>
+            </div>
+
+        </div>
+        <div class="card">
+
+            <div class="imgBox">
+                <img src="../assets/output-onlinepngtools 1.png" alt="mouse corsair" class="mouse">
+            </div>
+
+            <div class="contentBox">
+                <h3>Camisa de la selección</h3>
+                <h2 class="price">4.<small>99</small> €</h2>
+                <a href="#" class="buy">COMPRAR</a>
+            </div>
+
+        </div>
+        <div class="card">
+
+            <div class="imgBox">
+                <img src="../assets/club-granky-logo 1.png" alt="mouse corsair" class="mouse">
+            </div>
+
+            <div class="contentBox">
+                <h3>Camisa de la selección</h3>
+                <h2 class="price">4.<small>99</small> €</h2>
+                <a href="#" class="buy">COMPRAR</a>
+            </div>
+
+        </div>
+    </section>
+    <hr class="lineaSeparadora">
+    <div class="patrocinadores">
+
+        <ul class="sponsors-logos">
+            <li>
+                <a href="http://www.grancanariadeportes.com" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2015/02/Cabildo-color@3x-130x122.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2015/02/Cabildo-color@3x-130x122.png
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2015/02/Cabildo-color@3x-300x281.png 300w, https://cbgrancanaria.net/wp-content/uploads/2015/02/Cabildo-color@3x.png 423w, https://cbgrancanaria.net/wp-content/uploads/2015/02/Cabildo-color@3x-130x122@2x.png
+                                260w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="https://grancanariadeportes.com/" target="_blank">
+                    <img src="https://cdn.cbgrancanaria.net/2021/09/22111045/gran_canaria_isla_europea_del_deporte-130x103.jpg" class="attachment-sponsors size-sponsors wp-post-image" alt="Gran Canaria isla europea del deporte" loading="lazy
+                               " srcset="https://cdn.cbgrancanaria.net/2021/09/22111045/gran_canaria_isla_europea_del_deporte-130x103.jpg 130w, https://cdn.cbgrancanaria.net/2021/09/22111045/gran_canaria_isla_europea_del_deporte.jpg 300w" sizes="(max-width: 130px)
+                                100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="http://www.herbalife.es" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2015/02/herbalife_nutrition2-130x47.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2015/02/herbalife_nutrition2-130x47.png
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2015/02/herbalife_nutrition2-300x109.png 300w, https://cbgrancanaria.net/wp-content/uploads/2015/02/herbalife_nutrition2.png 400w, https://cbgrancanaria.net/wp-content/uploads/2015/02/herbalife_nutrition2-130x47@2x.png
+                                260w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="http://www.toyota-canarias.es/" target="_blank">
+                    <img src="https://cdn.cbgrancanaria.net/2018/08/27105409/toyota-1-130x85.png" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cdn.cbgrancanaria.net/2018/08/27105409/toyota-1-130x85.png
+                                130w, https://cdn.cbgrancanaria.net/2018/08/27105409/toyota-1-300x195.png 300w, https://cdn.cbgrancanaria.net/2018/08/27105409/toyota-1.png 400w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="http://www.holaislascanarias.com" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2015/10/CanaryIslands_es_color-130x48.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2015/10/CanaryIslands_es_color-130x48.png
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2015/10/CanaryIslands_es_color.png 273w, https://cbgrancanaria.net/wp-content/uploads/2015/10/CanaryIslands_es_color-130x48@2x.png 260w" sizes="(max-width: 130px) 100vw, 130px"
+                    /> </a>
+            </li>
+            <li>
+                <a href="https://www.caixabank.es/particular/home/particulares_es.html" target="_blank">
+                    <img src="https://cdn.cbgrancanaria.net/2021/03/26104811/caixa_bank2-300-130x78.png" class="attachment-sponsors size-sponsors wp-post-image" alt="Caixa Bank" loading="lazy" srcset="https://cdn.cbgrancanaria.net/2021/03/26104811/caixa_bank2-300-130x78.png
+                                130w, https://cdn.cbgrancanaria.net/2021/03/26104811/caixa_bank2-300.png 300w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="http://www.disagrupo.es" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2015/02/disa.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" /> </a>
+            </li>
+            <li>
+                <a href="http://www.aguasdeteror.com" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2015/02/agte-logo-pino-130x73.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="Aguas de Teror" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2015/02/agte-logo-pino-130x73.png
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2015/02/agte-logo-pino-300x168.png 300w, https://cbgrancanaria.net/wp-content/uploads/2015/02/agte-logo-pino-160x90.png 160w, https://cbgrancanaria.net/wp-content/uploads/2015/02/agte-logo-pino-320x180.png
+                                320w, https://cbgrancanaria.net/wp-content/uploads/2015/02/agte-logo-pino-640x360.png 640w, https://cbgrancanaria.net/wp-content/uploads/2015/02/agte-logo-pino-800x450.png 800w, https://cbgrancanaria.net/wp-content/uploads/2015/02/agte-logo-pino-1280x720.png
+                                1280w, https://cbgrancanaria.net/wp-content/uploads/2015/02/agte-logo-pino-1920x1080.png 1920w, https://cbgrancanaria.net/wp-content/uploads/2015/02/agte-logo-pino-722x406.png 722w, https://cbgrancanaria.net/wp-content/uploads/2015/02/agte-logo-pino-945x531.png
+                                945w, https://cbgrancanaria.net/wp-content/uploads/2015/02/agte-logo-pino.png 682w, https://cbgrancanaria.net/wp-content/uploads/2015/02/agte-logo-pino-130x73@2x.png 260w, https://cbgrancanaria.net/wp-content/uploads/2015/02/agte-logo-pino-300x168@2x.png
+                                600w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="http://www.hospitalperpetuosocorro.es" target="_blank">
+                    <img src="https://cdn.cbgrancanaria.net/2015/02/24154005/Logo-HPS-130x92.png" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cdn.cbgrancanaria.net/2015/02/24154005/Logo-HPS-130x92.png
+                                130w, https://cdn.cbgrancanaria.net/2015/02/24154005/Logo-HPS.png 300w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="http://www.atefuer.com" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2015/02/Atefuer@3x-130x31.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2015/02/Atefuer@3x-130x31.png
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2015/02/Atefuer@3x-300x72.png 300w, https://cbgrancanaria.net/wp-content/uploads/2015/02/Atefuer@3x.png 435w, https://cbgrancanaria.net/wp-content/uploads/2015/02/Atefuer@3x-130x31@2x.png
+                                260w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="https://www.clinicadoctorvalderrama.com/" target="_blank">
+                    <img src="https://cdn.cbgrancanaria.net/2021/09/22120047/clinica_dr_valderrama-130x65.png" class="attachment-sponsors size-sponsors wp-post-image" alt="Clínica Dr. Valderrama Odontología y Medicina Estética" loading="lazy
+                               " srcset="https://cdn.cbgrancanaria.net/2021/09/22120047/clinica_dr_valderrama-130x65.png 130w, https://cdn.cbgrancanaria.net/2021/09/22120047/clinica_dr_valderrama-300x151.png 300w, https://cdn.cbgrancanaria.net/2021/09/22120047/clinica_dr_valderrama.png
+                                400w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="http://ahembo.com/" target="_blank">
+                    <img src="https://cdn.cbgrancanaria.net/2015/02/06115520/clipper1-130x83.png" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cdn.cbgrancanaria.net/2015/02/06115520/clipper1-130x83.png
+                                130w, https://cdn.cbgrancanaria.net/2015/02/06115520/clipper1.png 300w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="http://www.hiperdino.es" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2015/02/HiperDino@3x-130x41.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2015/02/HiperDino@3x-130x41.png
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2015/02/HiperDino@3x-300x96.png 300w, https://cbgrancanaria.net/wp-content/uploads/2015/02/HiperDino@3x.png 414w, https://cbgrancanaria.net/wp-content/uploads/2015/02/HiperDino@3x-130x41@2x.png
+                                260w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="http://www.poema-del-mar.com/index.php/es/" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2018/09/poema_del_mar-LPGC2-123x130.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2018/09/poema_del_mar-LPGC2-123x130.png
+                                123w, https://cbgrancanaria.net/wp-content/uploads/2018/09/poema_del_mar-LPGC2-284x300.png 284w, https://cbgrancanaria.net/wp-content/uploads/2018/09/poema_del_mar-LPGC2.png 300w, https://cbgrancanaria.net/wp-content/uploads/2018/09/poema_del_mar-LPGC2-123x130@2x.png
+                                246w" sizes="(max-width: 123px) 100vw, 123px" /> </a>
+            </li>
+            <li>
+                <a href="http://www.sps-basket.com" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2015/02/Spalding_logo-130x25.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2015/02/Spalding_logo-130x25.png
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2015/02/Spalding_logo.png 135w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="http://www.tirma.com" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2015/10/Tirma-logo-130x74.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2015/10/Tirma-logo-130x74.png
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2015/10/Tirma-logo-300x172.png 300w, https://cbgrancanaria.net/wp-content/uploads/2015/10/Tirma-logo-160x90.png 160w, https://cbgrancanaria.net/wp-content/uploads/2015/10/Tirma-logo-320x180.png
+                                320w, https://cbgrancanaria.net/wp-content/uploads/2015/10/Tirma-logo-640x360.png 640w, https://cbgrancanaria.net/wp-content/uploads/2015/10/Tirma-logo-800x450.png 800w, https://cbgrancanaria.net/wp-content/uploads/2015/10/Tirma-logo-1280x720.png
+                                1280w, https://cbgrancanaria.net/wp-content/uploads/2015/10/Tirma-logo-1920x1080.png 1920w, https://cbgrancanaria.net/wp-content/uploads/2015/10/Tirma-logo-722x406.png 722w, https://cbgrancanaria.net/wp-content/uploads/2015/10/Tirma-logo-945x531.png
+                                945w, https://cbgrancanaria.net/wp-content/uploads/2015/10/Tirma-logo.png 400w, https://cbgrancanaria.net/wp-content/uploads/2015/10/Tirma-logo-130x74@2x.png 260w" sizes="(max-width: 130px) 100vw, 130px" />                    </a>
+            </li>
+            <li>
+                <a href="https://www.viajesinsular.net/" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2018/08/Logo-Insular-130x93.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="Viajes Insular" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2018/08/Logo-Insular-130x93.png
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2018/08/Logo-Insular.png 280w, https://cbgrancanaria.net/wp-content/uploads/2018/08/Logo-Insular-130x93@2x.png 260w" sizes="(max-width: 130px) 100vw, 130px" />                    </a>
+            </li>
+            <li>
+                <a href="https://altafitgymclub.com/" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2019/01/Altafit-130x85.jpg?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="Altafit" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2019/01/Altafit-130x85.jpg
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2019/01/Altafit.jpg 248w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="http://www.amandabus.com" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2015/02/AF_tobleron_AMANDA-DORADO-130x86.jpg?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2015/02/AF_tobleron_AMANDA-DORADO-130x86.jpg
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2015/02/AF_tobleron_AMANDA-DORADO.jpg 200w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="https://www.elprimerretodelaño.com/" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2019/02/aqualia-130x49.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="Aqualia" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2019/02/aqualia-130x49.png
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2019/02/aqualia.png 300w, https://cbgrancanaria.net/wp-content/uploads/2019/02/aqualia-130x49@2x.png 260w" sizes="(max-width: 130px) 100vw, 130px" />                    </a>
+            </li>
+            <li>
+                <a href="http://www.publicidadatlantis.com" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2015/02/atlantis_publicidad-130x34.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="Atlantis Publicidad" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2015/02/atlantis_publicidad-130x34.png
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2015/02/atlantis_publicidad.png 300w, https://cbgrancanaria.net/wp-content/uploads/2015/02/atlantis_publicidad-130x34@2x.png 260w" sizes="(max-width: 130px) 100vw, 130px"
+                    /> </a>
+            </li>
+            <li>
+                <a href="http://www.audiovisualescanarias.com" target="_blank">
+                    <img src="https://cdn.cbgrancanaria.net/2015/02/29160743/avc_audiovisuales_canarias-130x72.png" class="attachment-sponsors size-sponsors wp-post-image" alt="AVC Audiovisuales Canarias" loading="lazy" srcset="https://cdn.cbgrancanaria.net/2015/02/29160743/avc_audiovisuales_canarias-130x72.png
+                                130w, https://cdn.cbgrancanaria.net/2015/02/29160743/avc_audiovisuales_canarias.png 300w, https://cdn.cbgrancanaria.net/2015/02/29160743/avc_audiovisuales_canarias-160x90.png 160w, https://cdn.cbgrancanaria.net/2015/02/29160743/avc_audiovisuales_canarias-320x180.png
+                                320w, https://cdn.cbgrancanaria.net/2015/02/29160743/avc_audiovisuales_canarias-640x360.png 640w, https://cdn.cbgrancanaria.net/2015/02/29160743/avc_audiovisuales_canarias-800x450.png 800w, https://cdn.cbgrancanaria.net/2015/02/29160743/avc_audiovisuales_canarias-1280x720.png
+                                1280w, https://cdn.cbgrancanaria.net/2015/02/29160743/avc_audiovisuales_canarias-1920x1080.png 1920w, https://cdn.cbgrancanaria.net/2015/02/29160743/avc_audiovisuales_canarias-722x406.png 722w, https://cdn.cbgrancanaria.net/2015/02/29160743/avc_audiovisuales_canarias-945x531.png
+                                945w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="http://cadenaser.com/emisora/ser_las_palmas" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2015/02/cadena-ser-las_palmas-130x38.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2015/02/cadena-ser-las_palmas-130x38.png
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2015/02/cadena-ser-las_palmas.png 245w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="//www.canarias7.es" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2015/02/Canarias-7.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" /> </a>
+            </li>
+            <li>
+                <a href="https://vivealisios.com/" target="_blank">
+                    <img src="https://cdn.cbgrancanaria.net/2019/08/21083252/alisios-1-130x87.jpg" class="attachment-sponsors size-sponsors wp-post-image" alt="Alisios" loading="lazy" srcset="https://cdn.cbgrancanaria.net/2019/08/21083252/alisios-1-130x87.jpg
+                                130w, https://cdn.cbgrancanaria.net/2019/08/21083252/alisios-1.jpg 300w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="https://www.dielca.com" target="_blank">
+                    <img src="https://cdn.cbgrancanaria.net/2018/12/30153946/dielca-nuevo-130x52.png" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cdn.cbgrancanaria.net/2018/12/30153946/dielca-nuevo-130x52.png
+                                130w, https://cdn.cbgrancanaria.net/2018/12/30153946/dielca-nuevo.png 300w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="https://elaboradoencanarias.com/" target="_blank">
+                    <img src="https://cdn.cbgrancanaria.net/2021/11/03085718/elaborado-en-canarias-300x200-1-130x87.png" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cdn.cbgrancanaria.net/2021/11/03085718/elaborado-en-canarias-300x200-1-130x87.png
+                                130w, https://cdn.cbgrancanaria.net/2021/11/03085718/elaborado-en-canarias-300x200-1.png 300w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="http://www.halcourier.es" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2015/02/Halcourier@3x-130x86.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2015/02/Halcourier@3x-130x86.png
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2015/02/Halcourier@3x-300x198.png 300w, https://cbgrancanaria.net/wp-content/uploads/2015/02/Halcourier@3x.png 363w, https://cbgrancanaria.net/wp-content/uploads/2015/02/Halcourier@3x-130x86@2x.png
+                                260w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="http://www.grupojucarne.es" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2015/02/Jucarne-130x43.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2015/02/Jucarne-130x43.png
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2015/02/Jucarne-300x100.png 300w, https://cbgrancanaria.net/wp-content/uploads/2015/02/Jucarne.png 598w, https://cbgrancanaria.net/wp-content/uploads/2015/02/Jucarne-130x43@2x.png
+                                260w, https://cbgrancanaria.net/wp-content/uploads/2015/02/Jucarne-300x100@2x.png 600w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="http://www.laprovincia.es" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2015/02/La-provincia-130x17.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2015/02/La-provincia-130x17.png
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2015/02/La-provincia.png 136w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="https://www.navieraarmas.com/" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2018/09/logotipo-130x48.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2018/09/logotipo-130x48.png
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2018/09/logotipo.png 261w, https://cbgrancanaria.net/wp-content/uploads/2018/09/logotipo-130x48@2x.png 260w" sizes="(max-width: 130px) 100vw, 130px" />                    </a>
+            </li>
+            <li>
+                <a href="http://www.powercontrolcanarias.com/" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2018/02/power_7_seguridad-2.svg?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" /> </a>
+            </li>
+            <li>
+                <a href="http://www.roes.es" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2015/02/LOGO_ROES_600X600PX-130x105.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="ROES moda hombre" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2015/02/LOGO_ROES_600X600PX-130x105.png
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2015/02/LOGO_ROES_600X600PX-300x243.png 300w, https://cbgrancanaria.net/wp-content/uploads/2015/02/LOGO_ROES_600X600PX.png 600w, https://cbgrancanaria.net/wp-content/uploads/2015/02/LOGO_ROES_600X600PX-130x105@2x.png
+                                260w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <img src="https://cbgrancanaria.net/wp-content/uploads/2016/10/arrancadilla-colores-130x113.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="La Arrancadilla" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2016/10/arrancadilla-colores-130x113.png
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2016/10/arrancadilla-colores.png 300w, https://cbgrancanaria.net/wp-content/uploads/2016/10/arrancadilla-colores-130x113@2x.png 260w" sizes="(max-width: 130px) 100vw, 130px"
+                /> </li>
+            <li>
+                <a href="https://atn-arquitectura-y-urbanismo-sl.negocio.site" target="_blank">
+                    <img src="https://cdn.cbgrancanaria.net/2019/08/14102122/ATN_arquitectura-130x63.jpg" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cdn.cbgrancanaria.net/2019/08/14102122/ATN_arquitectura-130x63.jpg
+                                130w, https://cdn.cbgrancanaria.net/2019/08/14102122/ATN_arquitectura.jpg 300w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="http://www.audidat.com" target="_blank">
+                    <img src="https://cdn.cbgrancanaria.net/2015/02/19101353/audidat-130x33.png" class="attachment-sponsors size-sponsors wp-post-image" alt="Audidat" loading="lazy" srcset="https://cdn.cbgrancanaria.net/2015/02/19101353/audidat-130x33.png
+                                130w, https://cdn.cbgrancanaria.net/2015/02/19101353/audidat.png 138w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="http://www.bodegonvandama.com" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2015/02/Bodegón-Vandama@3x-130x41.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2015/02/Bodegón-Vandama@3x-130x41.png
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2015/02/Bodegón-Vandama@3x-300x95.png 300w, https://cbgrancanaria.net/wp-content/uploads/2015/02/Bodegón-Vandama@3x.png 351w, https://cbgrancanaria.net/wp-content/uploads/2015/02/Bodegón-Vandama@3x-130x41@2x.png
+                                260w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="http://www.canafruit.es/" target="_blank">
+                    <img src="https://cdn.cbgrancanaria.net/2018/09/20142416/Logo-Canafruit-T2021-130x78.jpg" class="attachment-sponsors size-sponsors wp-post-image" alt="Canafruit" loading="lazy" srcset="https://cdn.cbgrancanaria.net/2018/09/20142416/Logo-Canafruit-T2021-130x78.jpg
+                                130w, https://cdn.cbgrancanaria.net/2018/09/20142416/Logo-Canafruit-T2021.jpg 300w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="http://clinicapodologicahygeia.com/" target="_blank">
+                    <img src="https://cdn.cbgrancanaria.net/2020/09/28092619/Carla_Batista-Clinica_podologica2-130x52.png" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cdn.cbgrancanaria.net/2020/09/28092619/Carla_Batista-Clinica_podologica2-130x52.png
+                                130w, https://cdn.cbgrancanaria.net/2020/09/28092619/Carla_Batista-Clinica_podologica2.png 300w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="https://www.cope.es/emisoras/canarias/las-palmas/gran-canaria" target="_blank">
+                    <img src="https://cdn.cbgrancanaria.net/2019/12/02132519/cope-3-130x65.png" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cdn.cbgrancanaria.net/2019/12/02132519/cope-3-130x65.png
+                                130w, https://cdn.cbgrancanaria.net/2019/12/02132519/cope-3.png 300w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="http://www.cricanarias.com" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2015/02/GRUPO-CRI-LOGO-130x52.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="Grupo CRI" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2015/02/GRUPO-CRI-LOGO-130x52.png
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2015/02/GRUPO-CRI-LOGO.png 300w, https://cbgrancanaria.net/wp-content/uploads/2015/02/GRUPO-CRI-LOGO-130x52@2x.png 260w" sizes="(max-width: 130px) 100vw, 130px" />                    </a>
+            </li>
+            <li>
+                <a href="//www.dreammedia.es" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2015/02/dreammedia-130x78.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2015/02/dreammedia-130x78.png
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2015/02/dreammedia.png 300w, https://cbgrancanaria.net/wp-content/uploads/2015/02/dreammedia-130x78@2x.png 260w" sizes="(max-width: 130px) 100vw, 130px" />                    </a>
+            </li>
+            <li>
+                <a href="http://www.enotecaelzarcillo.com" target="_blank">
+                    <img src="https://cdn.cbgrancanaria.net/2015/02/03152703/el_zarcillo-300-106x130.png" class="attachment-sponsors size-sponsors wp-post-image" alt="El zarcillo" loading="lazy" srcset="https://cdn.cbgrancanaria.net/2015/02/03152703/el_zarcillo-300-106x130.png
+                                106w, https://cdn.cbgrancanaria.net/2015/02/03152703/el_zarcillo-300-245x300.png 245w, https://cdn.cbgrancanaria.net/2015/02/03152703/el_zarcillo-300.png 300w" sizes="(max-width: 106px) 100vw, 106px" />                    </a>
+            </li>
+            <li>
+                <a href="https://www.galaxygaming.es/" target="_blank">
+                    <img src="https://cdn.cbgrancanaria.net/2020/09/23104125/GALAXY-GAMING-CENTER-130x87.jpg" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cdn.cbgrancanaria.net/2020/09/23104125/GALAXY-GAMING-CENTER-130x87.jpg
+                                130w, https://cdn.cbgrancanaria.net/2020/09/23104125/GALAXY-GAMING-CENTER.jpg 300w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/GSAtlantico/" target="_blank">
+                    <img src="https://cdn.cbgrancanaria.net/2021/12/22172055/grupo_sanitario_atlantico-130x75.png" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cdn.cbgrancanaria.net/2021/12/22172055/grupo_sanitario_atlantico-130x75.png
+                                130w, https://cdn.cbgrancanaria.net/2021/12/22172055/grupo_sanitario_atlantico.png 300w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="https://www.proarentacar.com/" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2018/12/Hertz-130x55.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="Hertz" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2018/12/Hertz-130x55.png
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2018/12/Hertz.png 300w, https://cbgrancanaria.net/wp-content/uploads/2018/12/Hertz-130x55@2x.png 260w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="https://www.hotelesthe.com/" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2018/08/THe-Hoteles-130x109.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2018/08/THe-Hoteles-130x109.png
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2018/08/THe-Hoteles.png 300w, https://cbgrancanaria.net/wp-content/uploads/2018/08/THe-Hoteles-130x109@2x.png 260w" sizes="(max-width: 130px) 100vw, 130px" />                    </a>
+            </li>
+            <li>
+                <a href="http://lapepadetriana.es" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2016/12/logo-la-pepa-color-2-130x88.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2016/12/logo-la-pepa-color-2-130x88.png
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2016/12/logo-la-pepa-color-2.png 300w, https://cbgrancanaria.net/wp-content/uploads/2016/12/logo-la-pepa-color-2-130x88@2x.png 260w" sizes="(max-width: 130px) 100vw, 130px"
+                    /> </a>
+            </li>
+            <li>
+                <a href="http://www.liceo2000.com" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2015/02/Liceo-2000@3x-130x28.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2015/02/Liceo-2000@3x-130x28.png
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2015/02/Liceo-2000@3x-300x65.png 300w, https://cbgrancanaria.net/wp-content/uploads/2015/02/Liceo-2000@3x.png 402w, https://cbgrancanaria.net/wp-content/uploads/2015/02/Liceo-2000@3x-130x28@2x.png
+                                260w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="http://www.medican.es/" target="_blank">
+                    <img src="https://cdn.cbgrancanaria.net/2021/09/21094616/medican-130x87.png" class="attachment-sponsors size-sponsors wp-post-image" alt="Medican" loading="lazy" srcset="https://cdn.cbgrancanaria.net/2021/09/21094616/medican-130x87.png
+                                130w, https://cdn.cbgrancanaria.net/2021/09/21094616/medican.png 150w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="https://naturalkitchen.es/" target="_blank">
+                    <img src="https://cdn.cbgrancanaria.net/2021/09/21081440/natural_kitchen-130x93.png" class="attachment-sponsors size-sponsors wp-post-image" alt="Natural Kitchen" loading="lazy" srcset="https://cdn.cbgrancanaria.net/2021/09/21081440/natural_kitchen-130x93.png
+                                130w, https://cdn.cbgrancanaria.net/2021/09/21081440/natural_kitchen.png 301w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="http://www.nh-hoteles.es" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2015/02/nh-hoteles@3x-1-130x49.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2015/02/nh-hoteles@3x-1-130x49.png
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2015/02/nh-hoteles@3x-1-300x114.png 300w, https://cbgrancanaria.net/wp-content/uploads/2015/02/nh-hoteles@3x-1.png 656w, https://cbgrancanaria.net/wp-content/uploads/2015/02/nh-hoteles@3x-1-130x49@2x.png
+                                260w, https://cbgrancanaria.net/wp-content/uploads/2015/02/nh-hoteles@3x-1-300x114@2x.png 600w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/nusainnovaciondesign/" target="_blank">
+                    <img src="https://cdn.cbgrancanaria.net/2021/09/21094143/NUSA-130x94.png" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cdn.cbgrancanaria.net/2021/09/21094143/NUSA-130x94.png 130w,
+                                https://cdn.cbgrancanaria.net/2021/09/21094143/NUSA.png 300w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="https://ossaforma.com/" target="_blank">
+                    <img src="https://cdn.cbgrancanaria.net/2021/09/21093753/ossaforma-130x38.png" class="attachment-sponsors size-sponsors wp-post-image" alt="Ossaforma" loading="lazy" srcset="https://cdn.cbgrancanaria.net/2021/09/21093753/ossaforma-130x38.png
+                                130w, https://cdn.cbgrancanaria.net/2021/09/21093753/ossaforma.png 300w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="https://www.lechepuleva.es/" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2017/09/puleva-130x89.jpg?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="Leche Puleva" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2017/09/puleva-130x89.jpg
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2017/09/puleva.jpg 300w, https://cbgrancanaria.net/wp-content/uploads/2017/09/puleva-130x89@2x.jpg 260w" sizes="(max-width: 130px) 100vw, 130px" />                    </a>
+            </li>
+            <li>
+                <a href="http://www.elarrosar.com" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2015/02/El-arrosar@3x-130x25.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2015/02/El-arrosar@3x-130x25.png
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2015/02/El-arrosar@3x-300x57.png 300w, https://cbgrancanaria.net/wp-content/uploads/2015/02/El-arrosar@3x.png 345w, https://cbgrancanaria.net/wp-content/uploads/2015/02/El-arrosar@3x-130x25@2x.png
+                                260w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="http://www.riberadelriomino.com" target="_blank">
+                    <img src="https://cbgrancanaria.net/wp-content/uploads/2015/02/Restaurante-Ribera-del-Rio-Miño@3x-130x69.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2015/02/Restaurante-Ribera-del-Rio-Miño@3x-130x69.png
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2015/02/Restaurante-Ribera-del-Rio-Miño@3x-300x159.png 300w, https://cbgrancanaria.net/wp-content/uploads/2015/02/Restaurante-Ribera-del-Rio-Miño@3x.png 333w, https://cbgrancanaria.net/wp-content/uploads/2015/02/Restaurante-Ribera-del-Rio-Miño@3x-130x69@2x.png
+                                260w" sizes="(max-width: 130px) 100vw, 130px" /> </a>
+            </li>
+            <li>
+                <a href="http://www.vinofilos.net" target="_blank">
+                    <img src="https://cdn.cbgrancanaria.net/2015/02/03151305/vinofilos-300-130x130.png" class="attachment-sponsors size-sponsors wp-post-image" alt="Vinofilos" loading="lazy" srcset="https://cdn.cbgrancanaria.net/2015/02/03151305/vinofilos-300-130x130.png
+                                130w, https://cdn.cbgrancanaria.net/2015/02/03151305/vinofilos-300.png 300w, https://cdn.cbgrancanaria.net/2015/02/03151305/vinofilos-300-150x150.png 150w" sizes="(max-width: 130px) 100vw, 130px" />                    </a>
+            </li>
+            <li>
+                <img src="https://cbgrancanaria.net/wp-content/uploads/2015/02/ZONA-AMARILLA@3x-1-130x52.png?x48614" class="attachment-sponsors size-sponsors wp-post-image" alt="" loading="lazy" srcset="https://cbgrancanaria.net/wp-content/uploads/2015/02/ZONA-AMARILLA@3x-1-130x52.png
+                                130w, https://cbgrancanaria.net/wp-content/uploads/2015/02/ZONA-AMARILLA@3x-1-300x121.png 300w, https://cbgrancanaria.net/wp-content/uploads/2015/02/ZONA-AMARILLA@3x-1.png 567w, https://cbgrancanaria.net/wp-content/uploads/2015/02/ZONA-AMARILLA@3x-1-130x52@2x.png
+                                260w" sizes="(max-width: 130px) 100vw, 130px" /> </li>
+        </ul>
+    </div>
+    <footer class="footer-04">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-2 mb-md-0 mb-2">
+                    <img src="../assets/logo_granca.png" width="100px">
+                </div>
+                <div class=" borrar col-md-6 col-lg-3 mb-md-0 mb-2 text-center">
+                    <ul class="list-unstyled izq">
+                        <li><a href="#" class="py-1 d-block">LOCALIZACIÓN</a></li>
+                        <li><a href="#" class="py-1 d-block">CLUB</a></li>
+                        <li><a href="#" class="py-1 d-block">NOTICIAS</a></li>
+
+                    </ul>
+                    <ul class="list-unstyled der">
+                        <li><a href="#" class="py-1 d-block">TIENDA</a></li>
+                        <li><a href="#" class="py-1 d-block">ENTRADAS</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-2 mb-md-3 mb-2">
+                    <img src="../assets/logo_liga_endesa_blanco.png" width="150px">
+                </div>
+                <div class="col-md-6 col-lg-5 mb-md-3 mb-2">
+                    <div class="iconos">
+                        <img src="../assets/Twitter-logo.png">
+                        <img src="../assets/ytb-logo.png">
+                        <img src="../assets/Facebook_logo.png">
+                        <img src="../assets/tiktok_logo.png">
+                        <img src="../assets/instagram_logo.png">
+                        <img src="../assets/Whatsapp_logo.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-100 mt-2 border-top py-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6">
+
+                        <p class="copyright">
+                            © Club Baloncesto Gran Canaria
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-6 text-md-right">
+                        <p class=" list-unstyled">
+                            Política de privacidad - Protección de datos - Política de cookies
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js'></script>
+<script type='text/javascript' src=''></script>
+<script type='text/javascript' src=''></script>
+<script type='text/Javascript'></script>
+
+
+</html>
