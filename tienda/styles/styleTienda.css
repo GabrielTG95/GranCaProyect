@@ -250,7 +250,17 @@ h2 {
 }
 
 .wrapper {
+    width: 100%;
+    position: absolute;
+    height: 100%;
     background: linear-gradient( rgba(255, 183, 24, 0.7)100%, rgba(255, 183, 24, 0.7)100%), url("../../assets/istockphoto-482952995-612x612.jpg");
+    background-position: center;
+    animation-name: changeImagen;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /*background-color: #ffb717;*/
+    opacity: 1;
+    clip-path: polygon(85% 0, 100% 0, 100% 50%, 100% 100%, 65% 100%);
 }
 
 .imgBox:hover {
