@@ -47,7 +47,7 @@
     color: #010c70;
     font-weight: bold;
     font-family: Smooch Sans;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .post_int{
@@ -77,3 +77,60 @@
     margin-top: -10vh;
     filter: grayscale(0%);
 }
+
+@media (max-width:900px) {
+    .cabecera {
+        height: 50vh;
+        background-position: left;
+    }
+    .web_app {
+        width: 90%;
+        margin: 0px auto;
+    }
+    .interrogantes {
+        width: 5%;
+        font-size: 60px;
+        color: #010c70;
+        font-weight: bold;
+        font-family: Smooch Sans;
+        margin-right: 24px;
+    }
+    .div_int {
+        height: auto;
+    }
+    .app {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 40% 40%;
+        row-gap: 100px;
+    }
+    .app img {
+        width: 100%;
+        height: 45vh;
+        border-radius: 20px;
+        box-shadow: 0px 0px 5px 5px rgb(73, 73, 73);
+        filter: grayscale(80%);
+        
+    }
+    .app img:hover {
+        width: 115%;
+        height: 52vh;
+        margin-left: -7%;
+        transition: 0.2s;
+        margin-top: -10vh;
+        filter: grayscale(0%);
+    }
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+                                                    Abonate
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------*/
