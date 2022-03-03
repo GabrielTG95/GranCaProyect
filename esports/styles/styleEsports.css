@@ -34,7 +34,6 @@ section {
     animation-name: changeImagen;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    /*background-color: #ffb717;*/
     opacity: 1;
     clip-path: polygon(85% 0, 100% 0, 100% 50%, 100% 100%, 65% 100%);
 }
