@@ -17,12 +17,11 @@
 
 -------------------------------------------------------------------------------------------------------------------------*/
 
-.titulazo{
+.titulazo {
     font-family: Bebas Neue;
     font-size: 80px;
     letter-spacing: 0.5rem;
-    opacity: 1;
-    color: #000000;
+    color: #010c70;
 }
 
 h2 {
@@ -338,7 +337,7 @@ textarea {
 
 .contacta h2 {
     font-size: 25px;
-    color:#FFB718;
+    color: #FFB718;
 }
 
 .contacta h2:hover {
