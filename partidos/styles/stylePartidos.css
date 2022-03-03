@@ -287,6 +287,10 @@ a {
     margin-bottom: 150px;
 }
 
+.wrapper {
+    background: linear-gradient( rgba(255, 183, 24, 0.7)100%, rgba(255, 183, 24, 0.7)100%), url("../../assets/wallpaperflare.com_wallpaper\ \(2\).jpg");
+}
+
 .noticia h3 {
     text-align: center;
     color: rgb(1, 1, 165);

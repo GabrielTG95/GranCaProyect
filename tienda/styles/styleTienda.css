@@ -249,6 +249,10 @@ h2 {
     transition: 0.5s;
 }
 
+.wrapper {
+    background: linear-gradient( rgba(255, 183, 24, 0.7)100%, rgba(255, 183, 24, 0.7)100%), url("../../assets/istockphoto-482952995-612x612.jpg");
+}
+
 .imgBox:hover {
     transform: scale(1.25);
     transition: 0.5s;
