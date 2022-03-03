@@ -120,9 +120,9 @@ section {
 }
 
 #banners img {
-    width: 35%;
-    height: 20%;
-    padding: 3rem;
+    width: 25%;
+    height: 10rem;
+    padding: 1rem;
     -webkit-filter: grayscale(70%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(70%);
@@ -354,12 +354,23 @@ h2 {
     display: none;
 }
 
+.logoEquipo {
+    width: 3%;
+    height: 3%;
+}
+
+.tablaClasificacion {
+    background-color: white;
+    padding: 0 5rem;
+    border-radius: 0.7rem;
+}
+
 .results tr[visible='true'] {
     display: table-row;
 }
 
 .tablaClasificacion {
-    width: 30%;
+    width: 70%;
     margin: 0 auto;
 }
 
