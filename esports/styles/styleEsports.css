@@ -2,6 +2,28 @@ section {
     background: linear-gradient(180deg, rgba(0, 24, 150, 0.2) 0%, rgba(255, 0, 0, 1) 100%);
 }
 
+#titulo{
+    font-size: 72px;
+    background: -webkit-linear-gradient(left, rgba(0,24,150,1) 0%, rgba(207,30,83,1) 50%, rgba(194,134,0,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.valores{
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    background: linear-gradient(180deg, rgba(0,23,112,1) 30%, rgba(0,0,0,1) 100%);
+
+}
+
+.valores img{
+    max-height: 5em;
+    filter: invert(100%);
+}
+
+#email{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
 .wrapper {
     width: 100%;
     position: absolute;
