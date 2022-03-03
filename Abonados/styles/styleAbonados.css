@@ -170,3 +170,13 @@
     margin-top: 22px;
 }
 
+.precios{
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.precios img{
+    height: 500px;
+}
