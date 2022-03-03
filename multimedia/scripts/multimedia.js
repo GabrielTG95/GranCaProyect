@@ -11,3 +11,6 @@ function abrirRevista(revista){
   const url = 'revistas/'+revista+'.pdf';
   window.open(url);
 }
+function abrirAlbum(){
+  window.location.href = 'album.html';
+}
