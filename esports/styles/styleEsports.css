@@ -1,9 +1,10 @@
 section {
     background: linear-gradient(180deg, rgba(0, 24, 150, 0.2) 0%, rgba(255, 0, 0, 0.6) 100%);
+    overflow: hidden;
 }
 
 #titulo{
-    font-size: 72px;
+    font-size: 3em;
     background: -webkit-linear-gradient(left, rgba(0,24,150,1) 0%, rgba(207,30,83,1) 50%, rgba(194,134,0,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
