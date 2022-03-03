@@ -93,7 +93,7 @@
         color: #010c70;
         font-weight: bold;
         font-family: Smooch Sans;
-        margin-right: 24px;
+        margin-right: 26px;
     }
     .div_int {
         height: auto;
@@ -134,3 +134,39 @@
 
 
 -------------------------------------------------------------------------------------------------------------------------*/
+
+
+.abonados {
+    width: 60%;
+    margin: 0px auto;
+}
+
+.abonados h2 {
+    text-align: center;
+    color: #010c70;
+}
+
+.abonados h4 {
+    color: #010c70;
+}
+
+.div_vent {
+    height: 100px;
+    display: flex;
+}
+
+.ventajas {
+    width: 5%;
+    margin-top: -15px;
+    font-size: 80px;
+    color: #010c70;
+    font-weight: bold;
+    font-family: Great Vibes;
+    margin-right: 15px;
+}
+
+.post_vent {
+    width: 90%;
+    margin-top: 22px;
+}
+
