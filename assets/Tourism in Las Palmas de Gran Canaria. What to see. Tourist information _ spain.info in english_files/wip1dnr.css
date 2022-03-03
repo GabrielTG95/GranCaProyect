@@ -1,0 +1,57 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * stolzl:
+ *   - http://typekit.com/eulas/00000000000000003b9aedec
+ *   - http://typekit.com/eulas/00000000000000003b9aeded
+ *   - http://typekit.com/eulas/00000000000000003b9aedee
+ *   - http://typekit.com/eulas/00000000000000003b9aedef
+ *   - http://typekit.com/eulas/00000000000000003b9aedf0
+ *   - http://typekit.com/eulas/00000000000000003b9aedf1
+ *
+ * © 2009-2022 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2021-09-01 00:28:26 UTC"}*/
+
+@import url("https://p.typekit.net/p.css?s=1&k=wip1dnr&ht=tk&f=32202.32203.32204.32205.32206.32207&a=85379714&app=typekit&e=css");
+
+@font-face {
+font-family:"stolzl";
+src:url("https://use.typekit.net/af/c5d179/00000000000000003b9aedec/27/l?primer=4682b188ee7ba4fd712cf93810dd0cdd4a5943f84a2e5b2d3ccc3c6d26709990&fvd=n1&v=3") format("woff2"),url("https://use.typekit.net/af/c5d179/00000000000000003b9aedec/27/d?primer=4682b188ee7ba4fd712cf93810dd0cdd4a5943f84a2e5b2d3ccc3c6d26709990&fvd=n1&v=3") format("woff"),url("https://use.typekit.net/af/c5d179/00000000000000003b9aedec/27/a?primer=4682b188ee7ba4fd712cf93810dd0cdd4a5943f84a2e5b2d3ccc3c6d26709990&fvd=n1&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:100;font-stretch:normal;
+}
+
+@font-face {
+font-family:"stolzl";
+src:url("https://use.typekit.net/af/0b89c7/00000000000000003b9aeded/27/l?primer=4682b188ee7ba4fd712cf93810dd0cdd4a5943f84a2e5b2d3ccc3c6d26709990&fvd=n2&v=3") format("woff2"),url("https://use.typekit.net/af/0b89c7/00000000000000003b9aeded/27/d?primer=4682b188ee7ba4fd712cf93810dd0cdd4a5943f84a2e5b2d3ccc3c6d26709990&fvd=n2&v=3") format("woff"),url("https://use.typekit.net/af/0b89c7/00000000000000003b9aeded/27/a?primer=4682b188ee7ba4fd712cf93810dd0cdd4a5943f84a2e5b2d3ccc3c6d26709990&fvd=n2&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:200;font-stretch:normal;
+}
+
+@font-face {
+font-family:"stolzl";
+src:url("https://use.typekit.net/af/c122e6/00000000000000003b9aedee/27/l?primer=4682b188ee7ba4fd712cf93810dd0cdd4a5943f84a2e5b2d3ccc3c6d26709990&fvd=n3&v=3") format("woff2"),url("https://use.typekit.net/af/c122e6/00000000000000003b9aedee/27/d?primer=4682b188ee7ba4fd712cf93810dd0cdd4a5943f84a2e5b2d3ccc3c6d26709990&fvd=n3&v=3") format("woff"),url("https://use.typekit.net/af/c122e6/00000000000000003b9aedee/27/a?primer=4682b188ee7ba4fd712cf93810dd0cdd4a5943f84a2e5b2d3ccc3c6d26709990&fvd=n3&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:300;font-stretch:normal;
+}
+
+@font-face {
+font-family:"stolzl";
+src:url("https://use.typekit.net/af/317edc/00000000000000003b9aedef/27/l?primer=4682b188ee7ba4fd712cf93810dd0cdd4a5943f84a2e5b2d3ccc3c6d26709990&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/317edc/00000000000000003b9aedef/27/d?primer=4682b188ee7ba4fd712cf93810dd0cdd4a5943f84a2e5b2d3ccc3c6d26709990&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/317edc/00000000000000003b9aedef/27/a?primer=4682b188ee7ba4fd712cf93810dd0cdd4a5943f84a2e5b2d3ccc3c6d26709990&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"stolzl";
+src:url("https://use.typekit.net/af/3cc9c3/00000000000000003b9aedf0/27/l?primer=4682b188ee7ba4fd712cf93810dd0cdd4a5943f84a2e5b2d3ccc3c6d26709990&fvd=n5&v=3") format("woff2"),url("https://use.typekit.net/af/3cc9c3/00000000000000003b9aedf0/27/d?primer=4682b188ee7ba4fd712cf93810dd0cdd4a5943f84a2e5b2d3ccc3c6d26709990&fvd=n5&v=3") format("woff"),url("https://use.typekit.net/af/3cc9c3/00000000000000003b9aedf0/27/a?primer=4682b188ee7ba4fd712cf93810dd0cdd4a5943f84a2e5b2d3ccc3c6d26709990&fvd=n5&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:500;font-stretch:normal;
+}
+
+@font-face {
+font-family:"stolzl";
+src:url("https://use.typekit.net/af/e998e3/00000000000000003b9aedf1/27/l?primer=4682b188ee7ba4fd712cf93810dd0cdd4a5943f84a2e5b2d3ccc3c6d26709990&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/e998e3/00000000000000003b9aedf1/27/d?primer=4682b188ee7ba4fd712cf93810dd0cdd4a5943f84a2e5b2d3ccc3c6d26709990&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/e998e3/00000000000000003b9aedf1/27/a?primer=4682b188ee7ba4fd712cf93810dd0cdd4a5943f84a2e5b2d3ccc3c6d26709990&fvd=n7&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+.tk-stolzl { font-family: "stolzl",sans-serif; }
