@@ -1,3 +1,9 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    ;
+}
+
 section {
     display: flex;
     flex-wrap: wrap;
@@ -117,6 +123,10 @@ section {
 
 .card .details .center ul li a:hover {
     background: #ff3636;
+}
+
+#banners {
+    margin-top: 5rem;
 }
 
 #banners img {
@@ -267,6 +277,9 @@ section {
 
 h2 {
     text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    letter-spacing: 1rem;
 }
 
 .card::before {
@@ -359,10 +372,21 @@ h2 {
     height: 3%;
 }
 
+.puntosEquipo {
+    width: 8rem;
+}
+
+.posicionEquipo {
+    text-align: right;
+    vertical-align: middle;
+}
+
 .tablaClasificacion {
     background-color: white;
     padding: 0 5rem;
     border-radius: 0.7rem;
+    font-size: 0.9rem;
+    font-family: sans-serif;
 }
 
 .results tr[visible='true'] {
@@ -370,11 +394,30 @@ h2 {
 }
 
 .tablaClasificacion {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
 }
 
 .counter {
     padding: 8px;
     color: #ccc;
+}
+
+.imagenNoticia {
+    width: 25rem;
+    height: 20rem;
+}
+
+#noticias div {
+    margin: 2rem;
+}
+
+.textoNoticia {
+    padding: 1rem;
+    width: 15rem;
+    height: 8rem;
+    background-color: black;
+    opacity: 0.7;
+    color: white;
+    font-weight: bold;
 }
