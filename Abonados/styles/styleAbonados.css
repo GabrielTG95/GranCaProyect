@@ -13,6 +13,14 @@
     background-position: center;
 }
 
+.cabecera_abonate {
+    padding-top: 8rem;
+    height: 82.5vh;
+    background-image: url('../../assets/Abonados/Abonate3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 .web_app {
     width: 60%;
