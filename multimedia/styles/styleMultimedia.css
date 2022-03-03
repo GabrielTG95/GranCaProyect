@@ -11,6 +11,24 @@ h3 {
     background-color: #FFF8E9;
 }
 
+@media (max-width: 1520px) {
+    .specialZone {
+        display: none;
+    }
+}
+
+@media (max-width: 1500px) {
+    .wrapper {
+        background: rgba(255, 183, 24, 1);
+    }
+}
+
+@media (max-width: 1198px) {
+    .specialZone {
+        display: none;
+    }
+}
+
 .wrapper {
     width: 100%;
     position: absolute;

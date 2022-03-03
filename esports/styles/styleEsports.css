@@ -15,3 +15,21 @@ section {
     opacity: 1;
     clip-path: polygon(85% 0, 100% 0, 100% 50%, 100% 100%, 65% 100%);
 }
+
+@media (max-width: 1520px) {
+    .specialZone {
+        display: none;
+    }
+}
+
+@media (max-width: 1500px) {
+    .wrapper {
+        background: rgba(255, 183, 24, 1);
+    }
+}
+
+@media (max-width: 1198px) {
+    .specialZone {
+        display: none;
+    }
+}
