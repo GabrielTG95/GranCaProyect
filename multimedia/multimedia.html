@@ -52,7 +52,7 @@
 </script>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-red navbar-dark  navbar-fixed-top">
+    <nav class="navbar navbar-expand-xl navbar-red navbar-dark navbar-fixed-top">
         <div class="wrapper"> </div>
         <div class="container-fluid all-show">
             <ul class="nav navbar-nav navbar-right logo">
@@ -60,23 +60,29 @@
                     <a href="#"><img alt="logoGranca" src="../assets/logo_granca.png" id="logoGranca"></a>
                 </li>
             </ul>
-            <a class="navbar-brand" href="#">GRAN CANARIA
+            <a class="navbar-brand" href="#">CB GRAN CANARIA
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-hover="dropdown" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">CLUB</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Historia y Palmarés</a>
+                            <a class="dropdown-item" href="#">Historia y
+                                    Palmarés</a>
                             <a class="dropdown-item" href="#">Contacto</a>
                             <a class="dropdown-item" href="#">Ayúdanos a mejorar</a>
                             <a class="dropdown-item" href="#">Voluntarios</a>
                             <a class="dropdown-item" href="#">Canal de denuncias</a>
                             <a class="dropdown-item" href="#">Perfil de contratante</a>
                             <a class="dropdown-item" href="#">Portal de transparencia</a>
+                            <!--
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+
+                            -->
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -97,13 +103,15 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-hover="dropdown" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="multimedia.html">MULTIMEDIA</a>
+                        <a class="nav-link dropdown-toggle" data-hover="dropdown" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">MULTIMEDIA</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="albumes.html">Fotos</a>
-                            <a class="dropdown-item" href="videos.html">Vídeos</a>
-                            <a class="dropdown-item" href="revista_marea_amarilla.html">Revista Marea Amarilla</a>
+                            <a class="dropdown-item" href="#">Fotos</a>
+                            <a class="dropdown-item" href="#">Vídeos</a>
+                            <a class="dropdown-item" href="#">Revista Marea
+                                    Amarilla</a>
                         </div>
                     </li>
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-hover="dropdown" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">ABONADOS</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -120,17 +128,21 @@
                 </ul>
 
             </div>
+
             <ul class="nav navbar-nav navbar-right specialZone">
-                <li class="nav-item "> <a class="nav-link specialItem" href="#">ZONA PERSONAL</a> </li>
-                <li class="nav-item"> <a class="nav-link specialItem" href="#">APP</a> </li>
-                <li class="nav-item"> <a class="nav-link specialItem" href="#">ESPORTS</a> </li>
-                <li class="nav-item"> <a class="nav-link specialItem" href="#">ENTRADAS</a> </li>
+                <li class="nav-item"> <a class="nav-link specialItem botonesDistintos" href="#">PERSONAL</a> </li>
+                <li class="nav-item"> <a class="nav-link specialItem botonesDistintos" href="#">APP</a>
+                </li>
+                <li class="nav-item"> <a class="nav-link specialItem botonesDistintos" href="#">ESPORTS</a>
+                </li>
+                <li class="nav-item"> <a class="nav-link specialItem botonesDistintos" href="#">ENTRADAS</a>
+                </li>
         </div>
     </nav>
     <header>
         <div class="cabecera bg-cover text-white">
             <div class="container py-5 text-center font-weight-bold" id="tituloCabecera">
-                <h1 class="display-4 fw-bold mt-3 pt-5">MULTIMEDIA</h1>
+                <h1 class="display-4 mt-3 pt-5">MULTIMEDIA</h1>
             </div>
             <div id="filtro_superior"></div>
         </div>
@@ -139,11 +151,13 @@
     <section>
         <div class="container text-center">
             <div>
+                <hr>
                 <h2 class="my-3"><i class="fa-solid fa-images"></i> Álbumes</h2>
+                <hr>
                 <div class="p-3 multimediaApartado shadow">
                     <h3 class="h4">Último Partido</h3>
                     <div>
-                        <div class="slider">
+                        <div class="slider shadow">
                             <div class="slide-track">
                                 <div class="slide"><img src="img/img1.png" alt=""></div>
                                 <div class="slide"><img src="img/img2.png" alt=""></div>
@@ -155,63 +169,63 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-around flex-wrap fw-bold row">
-                        <div class="albumVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-sm-4 mx-3 my-2 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <div class="albumVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-md-4 col-10 mx-3 my-2 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <div class="px-1 mb-2">
                                 <img class="w-100" src="img/img1.png" alt="">
                             </div>
                             <p>Gran Canaria – Valencia Basket</p>
                             <p>(J12, 7Days EuroCup 21/22)</p>
                         </div>
-                        <div class="albumVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-sm-4 mx-3 my-2 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <div class="albumVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-md-4 col-10 mx-3 my-2 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <div class="px-1 mb-2">
                                 <img class="w-100" src="img/img1.png" alt="">
                             </div>
                             <p>Gran Canaria – Valencia Basket</p>
                             <p>(J12, 7Days EuroCup 21/22)</p>
                         </div>
-                        <div class="albumVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-sm-4 mx-3 my-2 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <div class="albumVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-md-4 col-10 mx-3 my-2 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <div class="px-1 mb-2">
                                 <img class="w-100" src="img/img1.png" alt="">
                             </div>
                             <p>Gran Canaria – Valencia Basket</p>
                             <p>(J12, 7Days EuroCup 21/22)</p>
                         </div>
-                        <div class="albumVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-sm-4 mx-3 my-2 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <div class="albumVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-md-4 col-10 mx-3 my-2 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <div class="px-1 mb-2">
                                 <img class="w-100" src="img/img1.png" alt="">
                             </div>
                             <p>Gran Canaria – Valencia Basket</p>
                             <p>(J12, 7Days EuroCup 21/22)</p>
                         </div>
-                        <div class="albumVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-sm-4 mx-3 my-2 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <div class="albumVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-md-4 col-10 mx-3 my-2 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <div class="px-1 mb-2">
                                 <img class="w-100" src="img/img1.png" alt="">
                             </div>
                             <p>Gran Canaria – Valencia Basket</p>
                             <p>(J12, 7Days EuroCup 21/22)</p>
                         </div>
-                        <div class="albumVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-sm-4 mx-3 my-2 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <div class="albumVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-md-4 col-10 mx-3 my-2 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <div class="px-1 mb-2">
                                 <img class="w-100" src="img/img1.png" alt="">
                             </div>
                             <p>Gran Canaria – Valencia Basket</p>
                             <p>(J12, 7Days EuroCup 21/22)</p>
                         </div>
-                        <div class="albumVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-sm-4 mx-3 my-2 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <div class="albumVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-md-4 col-10 mx-3 my-2 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <div class="px-1 mb-2">
                                 <img class="w-100" src="img/img1.png" alt="">
                             </div>
                             <p>Gran Canaria – Valencia Basket</p>
                             <p>(J12, 7Days EuroCup 21/22)</p>
                         </div>
-                        <div class="albumVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-sm-4 mx-3 my-2 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <div class="albumVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-md-4 col-10 mx-3 my-2 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <div class="px-1 mb-2">
                                 <img class="w-100" src="img/img1.png" alt="">
                             </div>
                             <p>Gran Canaria – Valencia Basket</p>
                             <p>(J12, 7Days EuroCup 21/22)</p>
                         </div>
-                        <div class="albumVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-sm-4 mx-3 my-2 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <div class="albumVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-md-4 col-10 mx-3 my-2 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <div class="px-1 mb-2">
                                 <img class="w-100" src="img/img1.png" alt="">
                             </div>
@@ -266,7 +280,9 @@
                 <!-- Modal -->
             </div>
             <div>
+                <hr>
                 <h2 class="my-3"><i class="fa-solid fa-film"></i> Vídeos</h2>
+                <hr>
                 <div class="p-3 multimediaApartado shadow">
                     <h3 class="h4">Último Partido</h3>
                     <div class="row">
@@ -280,7 +296,7 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-around flex-wrap row">
-                        <div class="videoVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-sm-4 mx-3 my-2 py-2 fw-bold" data-bs-toggle="modal" data-bs-target="#videoModal">
+                        <div class="videoVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-md-4 col-10 mx-3 my-2 py-2 fw-bold" data-bs-toggle="modal" data-bs-target="#videoModal">
                             <div class="px-1 mb-2 videoCuadro">
                                 <img class="w-100" src="img/img1.png" alt="">
                                 <img class="botonPlay" src="img/play.png" alt="">
@@ -288,7 +304,7 @@
                             <p>Gran Canaria – Valencia Basket</p>
                             <p>(J12, 7Days EuroCup 21/22)</p>
                         </div>
-                        <div class="videoVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-sm-4 mx-3 my-2 py-2 fw-bold" data-bs-toggle="modal" data-bs-target="#videoModal">
+                        <div class="videoVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-md-4 col-10 mx-3 my-2 py-2 fw-bold" data-bs-toggle="modal" data-bs-target="#videoModal">
                             <div class="px-1 mb-2 videoCuadro">
                                 <img class="w-100" src="img/img1.png" alt="">
                                 <img class="botonPlay" src="img/play.png" alt="">
@@ -296,7 +312,7 @@
                             <p>Gran Canaria – Valencia Basket</p>
                             <p>(J12, 7Days EuroCup 21/22)</p>
                         </div>
-                        <div class="videoVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-sm-4 mx-3 my-2 py-2 fw-bold" data-bs-toggle="modal" data-bs-target="#videoModal">
+                        <div class="videoVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-md-4 col-10 mx-3 my-2 py-2 fw-bold" data-bs-toggle="modal" data-bs-target="#videoModal">
                             <div class="px-1 mb-2 videoCuadro">
                                 <img class="w-100" src="img/img1.png" alt="">
                                 <img class="botonPlay" src="img/play.png" alt="">
@@ -304,7 +320,7 @@
                             <p>Gran Canaria – Valencia Basket</p>
                             <p>(J12, 7Days EuroCup 21/22)</p>
                         </div>
-                        <div class="videoVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-sm-4 mx-3 my-2 py-2 fw-bold" data-bs-toggle="modal" data-bs-target="#videoModal">
+                        <div class="videoVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-md-4 col-10 mx-3 my-2 py-2 fw-bold" data-bs-toggle="modal" data-bs-target="#videoModal">
                             <div class="px-1 mb-2 videoCuadro">
                                 <img class="w-100" src="img/img1.png" alt="">
                                 <img class="botonPlay" src="img/play.png" alt="">
@@ -312,7 +328,7 @@
                             <p>Gran Canaria – Valencia Basket</p>
                             <p>(J12, 7Days EuroCup 21/22)</p>
                         </div>
-                        <div class="videoVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-sm-4 mx-3 my-2 py-2 fw-bold" data-bs-toggle="modal" data-bs-target="#videoModal">
+                        <div class="videoVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-md-4 col-10 mx-3 my-2 py-2 fw-bold" data-bs-toggle="modal" data-bs-target="#videoModal">
                             <div class="px-1 mb-2 videoCuadro">
                                 <img class="w-100" src="img/img1.png" alt="">
                                 <img class="botonPlay" src="img/play.png" alt="">
@@ -320,7 +336,7 @@
                             <p>Gran Canaria – Valencia Basket</p>
                             <p>(J12, 7Days EuroCup 21/22)</p>
                         </div>
-                        <div class="videoVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-sm-4 mx-3 my-2 py-2 fw-bold" data-bs-toggle="modal" data-bs-target="#videoModal">
+                        <div class="videoVistaPrevia multimediaVistaPrevia shadow col-lg-3 col-md-4 col-10 mx-3 my-2 py-2 fw-bold" data-bs-toggle="modal" data-bs-target="#videoModal">
                             <div class="px-1 mb-2 videoCuadro">
                                 <img class="w-100" src="img/img1.png" alt="">
                                 <img class="botonPlay" src="img/play.png" alt="">
@@ -348,12 +364,14 @@
                 </div>
                 <!-- Modal -->
             </div>
-            <div class="mb-3">
+            <div class="mb-5">
+                <hr>
                 <h2 class="my-3"><i class="fa-solid fa-newspaper"></i> Revista Marea Amarilla</h2>
+                <hr>
                 <div class="py-3 px-5 multimediaApartado shadow">
                     <h3 class="h4">Últimos Números</h3>
-                    <div class="row text-start mb-4 shadow">
-                        <div class="revistaVistaPrevia multimediaVistaPrevia col-md-3 col-4 d-flex flex-wrap ps-3">
+                    <div class="row text-start mb-5 shadow">
+                        <div class="revistaVistaPrevia multimediaVistaPrevia col-md-3 col-12 d-flex flex-wrap ps-3">
                             <div class="w-100 mb-0 d-flex align-items-center">
                                 <p class="w-100 mt-4 mb-0 h5">Número 74</p>
                             </div>
@@ -361,7 +379,7 @@
                                 <p class="h-100 w-100">27 de octubre de 2021</p>
                             </div>
                         </div>
-                        <div class="revistaVistaPrevia multimediaVistaPrevia col-md-6 col-8 d-flex flex-wrap">
+                        <div class="revistaVistaPrevia multimediaVistaPrevia col-md-6 col-12 d-flex flex-wrap">
                             <p class="w-100 mb-0 h3">RECTA FINAL POR LA COPA</p>
                             <p class="w-100 mb-0">
                                 Revista con motivo del encuentro jugado en el Gran Canaria Arena contra el Murcia correspondiente a la jornada 15 de la Liga Endesa.
@@ -372,8 +390,8 @@
                             <img class="w-100 " src="img/revista1.jpg" alt="">
                         </div>
                     </div>
-                    <div class="row text-start mb-4 shadow">
-                        <div class="revistaVistaPrevia multimediaVistaPrevia col-md-3 col-4 d-flex flex-wrap ps-3">
+                    <div class="row text-start mb-5 shadow">
+                        <div class="revistaVistaPrevia multimediaVistaPrevia col-md-3 col-12 d-flex flex-wrap ps-3">
                             <div class="w-100 mb-0 d-flex align-items-center">
                                 <p class="w-100 mt-4 mb-0 h5">Número 74</p>
                             </div>
@@ -381,7 +399,7 @@
                                 <p class="h-100 w-100">27 de octubre de 2021</p>
                             </div>
                         </div>
-                        <div class="revistaVistaPrevia multimediaVistaPrevia col-md-6 col-8 d-flex flex-wrap">
+                        <div class="revistaVistaPrevia multimediaVistaPrevia col-md-6 col-12 d-flex flex-wrap">
                             <p class="w-100 mb-0 h3">RECTA FINAL POR LA COPA</p>
                             <p class="w-100 mb-0">
                                 Revista con motivo del encuentro jugado en el Gran Canaria Arena contra el Murcia correspondiente a la jornada 15 de la Liga Endesa.
@@ -392,8 +410,8 @@
                             <img class="w-100 " src="img/revista1.jpg" alt="">
                         </div>
                     </div>
-                    <div class="row text-start mb-4 shadow">
-                        <div class="revistaVistaPrevia multimediaVistaPrevia col-md-3 col-4 d-flex flex-wrap ps-3">
+                    <div class="row text-start mb-3 shadow">
+                        <div class="revistaVistaPrevia multimediaVistaPrevia col-md-3 col-12 d-flex flex-wrap ps-3">
                             <div class="w-100 mb-0 d-flex align-items-center">
                                 <p class="w-100 mt-4 mb-0 h5">Número 74</p>
                             </div>
@@ -401,14 +419,14 @@
                                 <p class="h-100 w-100">27 de octubre de 2021</p>
                             </div>
                         </div>
-                        <div class="revistaVistaPrevia multimediaVistaPrevia col-md-6 col-8 d-flex flex-wrap">
+                        <div class="revistaVistaPrevia multimediaVistaPrevia col-md-6 col-12 d-flex flex-wrap">
                             <p class="w-100 mb-0 h3">RECTA FINAL POR LA COPA</p>
                             <p class="w-100 mb-0">
                                 Revista con motivo del encuentro jugado en el Gran Canaria Arena contra el Murcia correspondiente a la jornada 15 de la Liga Endesa.
                             </p>
                             <p class="w-100 mb-0"><a href="#">Leer más</a></p>
                         </div>
-                        <div class="revistaVistaPrevia multimediaVistaPrevia col-md-3 col-12">
+                        <div class="revistaVistaPrevia multimediaVistaPrevia col-md-3 col-12    ">
                             <img class="w-100 " src="img/revista1.jpg" alt="">
                         </div>
                     </div>
@@ -485,11 +503,8 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 
-<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js'></script>
 <script type='text/javascript' src=''></script>
 <script type='text/javascript' src=''></script>
 <script type='text/Javascript'></script>
-
-<script src="scripts/carousel.js"></script>
 
 </html>
